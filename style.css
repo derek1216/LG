@@ -1,0 +1,290 @@
+
+@media (max-width: 575.98px) { 
+    .line{
+        display: none;
+    }
+
+    .icon{
+        
+    }
+
+    .col-sm-12{
+        padding:0px;
+    }
+
+    #p2 .arrow{
+        margin-top: 50px;
+    }
+
+    .overview{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+ }
+
+
+@media (min-width: 576px)  { 
+
+    .f18{
+        font-size: 17pt;
+    }
+    
+     .f22{
+         font-size: 22pt;
+     }
+    
+     .f26{
+        font-size: 26pt;
+    }
+    
+     .f30{
+        font-size: 30pt;
+    }
+    
+     .f36{
+        font-size: 36pt;
+    }
+
+    .iconright{
+        margin-left: -40px;
+    }
+
+    #p1 .title{
+        padding: 20px 100px;
+    }
+
+    #p1 > .row{
+        height: 567px;
+        background-position-x: -46px;
+    }
+
+    #p1 > .row > div{
+        margin-top: 135px;
+    }
+
+    #p2 .title{
+        padding: 20px 150px;
+    }
+
+    #p2 > .row  .row{
+        margin-top: 180px;
+    }
+
+    #p2 .content{
+        margin-top: 24%;
+    }
+
+    #p2 .arrow{
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    #p2 .col-md-7{
+        padding:0px;
+    }
+
+
+    #p3 > .row > div,#p4 > .row > div{
+        margin-top: 135px;
+    }
+
+    #p3 .col-md-5{
+        padding:0px;
+    }
+
+    #p3 .contentleft{
+        left: 32px;
+    }
+
+    #p3 .contentright{
+        position: relative;
+        left: 92px; 
+    }
+
+    #p3 .content1{
+        margin-top: 15%;
+    }
+
+    #p3 .content2{
+        margin-top: 3%;
+    }
+
+    #p3 .content3{
+        margin-top: 20%;
+    }
+
+    #p3 .scaleimg{
+        min-width: 130%;
+    }
+
+    #p3 .imgleft{
+        left:60px;
+    }
+
+    #p3 .imgright{
+        right:25px;
+    }
+
+    #p3 .r3{
+        padding-left: 70px;
+    }
+    
+    #p3 .r3 div[class^="col-md"]{
+        margin-top: -35px;
+    }
+
+    #p4 .content1{
+        margin-top: 154px;
+    }
+
+    #p4 .content2{
+        margin-top: 16%;
+    }
+
+    #p4 .r2{
+        padding-left: 70px;
+    }
+    
+    #p4 .r2 div[class^="col-md"]{
+        margin-top: -35px;
+    }
+
+    #p4 .r2 .iconright{
+        margin-left: -50px;
+    }
+
+    #p4 .iconright{
+        margin-left: -90px;
+    }
+
+    .overview{
+        background-size: cover;
+        height: 434px;
+        background-position: center;
+    }
+ }
+
+ body{
+    overflow-x: hidden;
+    position: relative;
+ }
+
+ .service_img{
+    max-width: 100%;
+ }
+
+ section .animation.active{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+ }
+
+ section .animation{
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transform: translate3d(0,60px,0);
+    transform: translate3d(0,60px,0);
+    transition: all 2s cubic-bezier(.15,.1,.2,1);
+ }
+
+
+
+.f42{
+    font-size: 42pt;
+}
+
+.fwhite{
+    color:#fff;
+}
+
+.fred{
+    color:#b7004a;
+}
+
+.fgray{
+    color:#333;
+    letter-spacing: -0.06em;
+}
+
+.line{
+    position: absolute;
+    z-index: 998;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+.i2{
+    top:60px;
+}
+.i3{
+    top:120px;
+}
+
+.input, .input1 {
+    width: 364px;
+    height: 43px;
+    background: #fbf9f9;
+    box-shadow: inset 1px 1px 3px 2px rgba(51,51,102,.5);
+    left: 216px;
+    position: relative;
+}
+
+.input input{
+    position: relative;
+    top: -42px;
+    left: 0;
+    line-height: 43px;
+}
+.input_select, .input_text {
+    padding: 0 0 0 12px;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    font-size: 24px;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft JhengHei,微軟正黑體,メイリオ,맑은 고딕,sans-serif;
+}
+.input_text {
+    width: 352px;
+    height: 43px;
+}
+button, input {
+    overflow: visible;
+}
+
+.input img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.menu, .page_box img {
+    display: block;
+}
+img {
+    border-style: none;
+}
+
+.overview .title {
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}

@@ -1,0 +1,58 @@
+
+正式：
+https://lg_aitechcare.ptt.com.tw/
+FTP Server：lg_aitechcare.ptt.com.tw
+FTP User：FTPRLGaite
+FTP Passwd：LGftP1000
+
+DB name：R_lgaitechcare
+DB user：Rlgaitechcare
+DB passwd：LgAiTe0955
+DB host：DB.Server
+PhpMyAdmin：http://official55ssl.ptt.com.tw/MyDB/
+
+測試：
+https://lg_aitechcare.ptt.com.tw/
+FTP Server：2lg_aitechcare.ptt.com.tw
+FTP User：FTP2lgaitE
+FTP Passwd：lgftP1004
+
+DB name：2_lgaitechcare
+DB user：2lgaitechcare
+DB passwd：AiteCH0950
+DB host：DB.Server
+PhpMyAdmin：http://devel55ssl.ptt.com.tw/MyDB/
+
+
+
+
+
+-----------------------------------------------------------
+
+
+
+
+
+正式：
+https://lg-airsolution-marathon.ptt.com.tw/
+FTP Server：lg-airsolution-marathon.ptt.com.tw 
+FTP User：FTPRlgma 
+FTP Passwd：LgftP1508 
+
+DB name：R_lgmarathon 
+DB user：Rlgmarathon 
+DB passwd：MarAla1424 
+DB host：DB.Server 
+PhpMyAdmin：http://official55ssl.ptt.com.tw/MyDB/ 
+
+測試：
+https://lg-airsolution-marathon. ptt.com.tw/
+FTP Server：2lg-airsolution-marathon.ptt.com.tw 
+FTP User：FTP2lgma 
+FTP Passwd：LGfTp1600 
+
+DB name：2_lgmarathon 
+DB user：2lgmarathon
+DB passwd：LoMaRa1423 
+DB host：DB.Server 
+PhpMyAdmin：http://devel55ssl.ptt.com.tw/MyDB/
