@@ -162,6 +162,20 @@
         height: 434px;
         background-position: center;
     }
+
+    .innerborder::before{
+        border: 2px solid red;
+        position: absolute;
+        content: '';
+        transform: scale(1);
+        top: 10px;
+        bottom: 10px;
+        left: 24px;
+        z-index: 9999;
+        right: 10px;
+        height: 28%;
+        width: 84%;
+    }
  }
 
  body{
