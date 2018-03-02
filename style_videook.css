@@ -7,31 +7,6 @@
     .icon{
         
     }
-
-    #p0 .videoContainer{
-        position: relative;
-        background-size: cover;
-        background-position: 50% 50%;
-        height: 100vh;
-        z-index: 0;
-     }
-    
-    #p0 video  {
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -o-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 104%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        opacity: 0.92;
-    }
     
 
     .col-sm-12{
@@ -128,7 +103,6 @@
 
     #p1 > .row{
         height: 567px;
-
     }
 
     #p1 > .row > div{
@@ -249,20 +223,6 @@
         color: #fff;
         display: block;
     }
-
-    .videoContainer
-    {
-        position:absolute;
-        height:100vh;
-        width:102%;
-        overflow: hidden;
-    }
-    
-    .videoContainer video
-    {
-        min-width: 100%;
-        min-height: 100%;
-    }
  }
 
  body{
@@ -270,9 +230,28 @@
     position: relative;
  }
 
+ #p0 .videosection{
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    z-index: 0;
+ }
+
 #p0 video.row  {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     position: absolute;
-    height:100vh;
+    top: 50%;
+    left: 50%;
+    min-width: 102%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
     opacity: 0.92;
 }
 
@@ -280,7 +259,9 @@
     height:100vh;
 }
 
-
+#p0 > .row{
+    position: relative;
+}
 
  .service_img{
     max-width: 100%;
@@ -303,9 +284,6 @@
 
 
 
-
-
- 
 
 
 .fwhite{
