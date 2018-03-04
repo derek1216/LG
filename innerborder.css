@@ -1,0 +1,146 @@
+
+@media (max-width: 575.98px) { 
+    .innerborder::before{
+        transform: scale(1.05);
+        bottom: 10px;
+        right: 10px;
+        z-index: 9999;
+        
+    }
+
+    #p2 .innerborder::before{
+        height: 60%;
+        width: 95%;
+        left: 8px;
+        top: 61px;
+    }
+
+    #p3 .innerborder::before{
+        height: 69%;
+        width: 96%;
+        left: 6px;
+        top: 69px;
+    }
+
+    #p4 .innerborder::before{
+        height: 69%;
+        width: 95%;
+        left: 8px;
+        top: 67px;
+    }
+
+    #p5 .innerborder::before{
+        height: 69%;
+        width: 96%;
+        left: 8px;
+        top: 68px;
+    }
+
+    #p6 .innerborder::before{
+        height: 68%;
+        width: 95%;
+        left: 9px;
+        top: 70px;
+    }
+
+}
+@media (min-width: 576px)  { 
+    .innerborder::before{
+        transform: scale(1.05);
+        bottom: 10px;
+        right: 10px;
+        z-index: 9999;
+        
+    }
+
+    #p2 .innerborder::before{
+        height: 95%;
+        width: 97%;
+        left: 10px;
+        top: 10px;
+    }
+
+    #p3 .innerborder::before{
+        height: 95%;
+        width: 117%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p3 .a3 .innerborder::before {
+        height: 97%;
+        width: 96%;
+        left: 10px;
+        top: 10px;
+    }
+
+    #p3 .a4 .innerborder::before {
+        height: 97%;
+        width: 89%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p4 .innerborder::before{
+        height: 97%;
+        width: 89%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p4 .a2 .innerborder::before{
+        height: 97%;
+        width: 89%;
+        left: 24px;
+        top: 10px;
+    }
+    
+    #p4 .a3 .innerborder::before{
+        height: 93%;
+        width: 89%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p5 .innerborder::before{
+        height: 97%;
+        width: 93%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p6 .innerborder::before{
+        height: 95%;
+        width: 93%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p6 .a3 .innerborder::before{
+        height: 96%;
+        width: 93%;
+        left: 24px;
+        top: 10px;
+    }
+
+    #p6 .a4 .innerborder::before{
+        height: 97%;
+        width: 91%;
+        left: 24px;
+        top: 10px;
+    }
+}
+
+.active .innerborder::before{
+    transform: scale(1);
+    transition-delay: 1s;
+    opacity: 1;
+}
+
+.innerborder::before{
+    border: 1px solid#fff;
+    position: absolute;
+    opacity: 0;
+    content: '';
+    transition: all 0.2s cubic-bezier(0.42, 0, 1.0, 1.0);
+}

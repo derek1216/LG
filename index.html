@@ -11,7 +11,8 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <title>Hello,12334 world!</title>
+    <link rel="stylesheet" href="innerborder.css">
+    <title>LG無人家政公司</title>
 </head>
 
 <body>
@@ -20,75 +21,82 @@
             <!-- The video -->
 
             <div class="videoContainer row">
-                <video autoplay muted loop id="myVideo video-bg" class="">
+                <div class="menuicon" data-toggle="modal" data-target="#menu">
+                    <img src="image/menu.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="row logo" style="">
+                        <img src="image/index/LOGO.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img src="image/index/index-line.png" alt="line" class="line">
+                    </div>
+                    <div class="row icon text-center" style="">
+                        <img class="mx-auto d-block" src="image/index/title.png" alt="" style="transform: scale(1);">
+                    </div>
+                    <div class="row title" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a class="golink btngo" data-ga-category="首頁" data-ga-event="立即了解" data-go="#p1" href="#" class="btngo">
+                                    <span class="c-btn__text fwhite">立即了解</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row nav navhidesm" style="">
+                        <ul class="mx-auto">
+                            <li>/&nbsp;&nbsp;
+                                <a data-ga-category="桌機選單" data-ga-event="公司理念" href="#" class="golink" data-go="#p2">公司理念</a>　</li>
+                            <li class="service">/&nbsp;&nbsp;
+                                <a href="#" data-ga-category="桌機選單" data-ga-event="服務項目">服務項目</a>&nbsp;&nbsp;&nbsp;
+                                <ul class="servicemenu">
+                                    <li class="golink" data-go="#p3" data-ga-category="桌機選單" data-ga-event="空氣健康管理">
+                                        <img src="image/index/index-nav-01.png" alt="">
+                                    </li>
+                                    <li class="golink" data-go="#p4" data-ga-category="桌機選單" data-ga-event="地板清潔服務">
+                                        <img src="image/index/index-nav-02.png" alt="">
+                                    </li>
+                                    <li class="golink" data-go="#p5" data-ga-category="桌機選單" data-ga-event="衣物護理服務">
+                                        <img src="image/index/index-nav-03.png" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>/&nbsp;&nbsp;
+                                <a href="#" data-ga-category="桌機選單" data-ga-event="安心服務" class="golink" data-go="#p3">安心服務</a>　</li>
+                            <li>/&nbsp;&nbsp;
+                                <a href="#" data-ga-category="桌機選單" data-ga-event="中獎服務" class="golink" data-go="#p7">中獎服務</a>　</li>
+                            <li>/&nbsp;&nbsp;
+                                <a href="http://www.lg.com/tw/support/contact/telephone" data-ga-category="桌機選單" data-ga-event="聯絡我們">聯絡我們</a>　</li>
+                        </ul>
+                    </div>
+                </div>
+                <video playsinline autoplay muted loop id="myVideo video-bg" class="">
                     <source src="bg.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="content" style="position: relative;">
-                <div class="row logo" style="">
-                    <img src="image/index/LOGO.png" alt="">
-                </div>
-                <div class="row">
-                    <img src="image/index/index-line.png" alt="line" class="line">
-                </div>
-                <div class="row icon text-center" style="">
-                    <img class="mx-auto d-block" src="image/index/title.png" alt="">
-                </div>
-                <div class="row title" style="">
-                    <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
-                        <div class="c-btn__inner">
-                            <a href="https://www.desamis.co.jp/message/" class="btngo">
-                                <span class="c-btn__text fwhite">立即了解</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row nav" style="">
-                    <ul class="mx-auto">
-                        <li>/&nbsp;&nbsp;
-                            <a href="">公司理念</a>　</li>
-                        <li class="service">/&nbsp;&nbsp;
-                            <a href="">服務項目</a>&nbsp;&nbsp;&nbsp;
-                            <ul class="servicemenu">
-                                <li>
-                                    <img src="image/index/index-nav-01.png" alt="">
-                                </li>
-                                <li>
-                                    <img src="image/index/index-nav-02.png" alt="">
-                                </li>
-                                <li>
-                                    <img src="image/index/index-nav-03.png" alt="">
-                                </li>
-                            </ul>
-                        </li>
-                        <li>/&nbsp;&nbsp;
-                            <a href="">安心服務</a>　</li>
-                        <li>/&nbsp;&nbsp;
-                            <a href="">中獎服務</a>　</li>
-                        <li>/&nbsp;&nbsp;
-                            <a href="">聯絡我們</a>　</li>
-                    </ul>
-                </div>
-            </div>
+
         </section>
 
         <section id="p1" class="noanimation">
-            <div class="row" style="background-image: url(image/p01/p01-bg.png);background-size: cover;background-repeat: no-repeat;background-attachment: fixed;
-            background-position-y: 100px;">
+            <div class="row mask"></div>
+            <div class="menuicon" data-toggle="modal" data-target="#menu">
+                <img src="image/menu.png" alt="">
+            </div>
+            <div class="row bg" style="">
                 <div>
                     <img src="image/p01/p01-line.png" alt="line" class="line" style="margin-top: 60px;">
                 </div>
                 <div class="col-md-12 text-center fwhite overview">
-                    <div>
+                    <div class="icon" style="transform: scale(1);">
                         <img src="image/p01/p01-icon.png" alt="icon">
                     </div>
                     <div>
-                        <p class="f36 title">
+                        <p class="f36 fm24 title">
                             <span style="border-bottom: 1px solid;">我們的理念</span>
                         </p>
                     </div>
-                    <div class="f22">
-                        <div style="margin-top: 107px;">
+                    <div class="f22 fm16 content">
+                        <div>
                             我們致力為人們提供更好的生活
                         </div>
                         <div>
@@ -102,13 +110,14 @@
             </div>
         </section>
         <section id="p2">
+            <div class="row mask"></div>
             <div class="row">
                 <div class="col-md-12 text-center fred">
                     <div class="arrow a1 animation">
                         <img src="image/p02/p02-arrow.png" alt="icon">
                     </div>
                     <div class="a1 animation">
-                        <p class="f42 title">
+                        <p class="f42 fm24 title fmedium">
                             <span style="border-bottom: 1px solid #b7004a;">兩大特色</span>
                         </p>
                     </div>
@@ -116,15 +125,15 @@
                         <div>
                             <img src="image/p02/p02-line.png" alt="line" class="line" style="right: 0;">
                         </div>
-                        <div class="col-md-7 col-sm-12">
+                        <div class="col-md-7 col-sm-12 innerborder">
                             <img class="service_img" src="image/p02/p02-png-01.png" alt="">
                         </div>
-                        <div class="col-md-5 col-sm-12 f30 text-left" style="background-image: url(image/p02/p02-number01.png);background-repeat: no-repeat;background-position: 100% 121px;">
-                            <div class="content">
+                        <div class="col-md-5 col-sm-12 f30 text-md-left text-center bgnumb1" style="background-repeat: no-repeat;background-position: 100% 121px;">
+                            <div class="content fm24 fmedium">
                                 <span>無人服務</span>
                                 <img src="image/p02/p02-icon-eye.png" alt="" class="icon">
                             </div>
-                            <div class="f26 fgray">
+                            <div class="f26 fm16 fgray desc">
                                 <span>專業智能科技 灰塵無所遁形</span>
                             </div>
                         </div>
@@ -133,16 +142,18 @@
                         <div>
                             <img src="image/p02/p02-line02.png" alt="line" class="line" style="left: 36.2%;">
                         </div>
-                        <div class="col-md-5 col-sm-12 order-md-1 order-2 f30 text-right" style="background-image: url(image/p02/p02-number02.png);background-repeat: no-repeat;background-position: 0 139px;">
-                            <div class="content">
-                                <img src="image/p02/p02-icon-hourglass.png" alt="" class="icon">
-                                <span>無虛耗時</span>
+                        <div class="col-md-5 col-sm-12 order-md-1 order-2 f30 text-md-left text-center bgnumb2" style="background-repeat: no-repeat;background-position: 0 139px;">
+                            <div class="content2 fm24 fmedium">
+                                <div class="row">
+                                    <img class="order-md-1 order-2 icon" src="image/p02/p02-icon-hourglass.png" alt="">
+                                    <span class="order-md-2 order-1">無虛耗時</span>
+                                </div>
                             </div>
-                            <div class="f26 fgray">
+                            <div class="f26 fgray fm16">
                                 <span>24小時全天服務，高效率清掃</span>
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-12 order-md-2 order-1">
+                        <div class="col-md-7 col-sm-12 order-md-2 order-1 innerborder">
                             <img class="service_img" src="image/p02/p02-png-02.png" alt="">
                         </div>
                     </div>
@@ -150,19 +161,20 @@
             </div>
         </section>
         <section id="p3">
-            <div class="row overview animation a1" style="background-image: url(image/p03/p03-title-bg.png);margin-top: 200px;">
+            <div class="row mask"></div>
+            <div class="row overview animation a1 bg" style="">
                 <div class="col-md-12 text-center fwhite" style="">
-                    <div>
+                    <div class="icon">
                         <img src="image/p03/p03-title-icon.png" alt="icon">
                     </div>
                     <div>
-                        <p class="f36 title">
-                            <span style="border-bottom: 1px solid;padding: 20px 50px;">健康空氣管理</span>
+                        <p class="f36 fm20 title fmedium">
+                            <span style="border-bottom: 1px solid;padding: 20px 50px;">健康呵護管理</span>
                         </p>
                     </div>
-                    <div class="f18">
+                    <div class="f18 fm16 desc fmedium">
                         <div style="margin-top: 40px;">
-                            我們善於處理空氣中各種過敏原與髒空氣，給你清淨好空間，也給你好心情
+                            我們善於處理空間中各種細菌原與髒污，給你清淨好空間，也給你健康好心情
                         </div>
                     </div>
                 </div>
@@ -171,10 +183,11 @@
                 <div>
                     <img src="image/p03/p03-line.png" alt="line" class="line" style="margin-top: -224px;right:0px;">
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <img class="service_img scaleimg" src="image/p03/p03-png-01.png" alt="">
+                <div class="col-md-4 col-sm-12 innerborder">
+                    <img class="service_img scaleimg navhidesm" src="image/p03/p03-png-01.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p03/air-png-01.png" alt="">
                 </div>
-                <div class="col-md-8 f30 text-md-left text-center contentleft">
+                <div class="col-md-8 f30 fm24 text-md-left text-center contentleft">
                     <div class="content1 fred row">
                         <div class="order-md-1 order-2">
                             <span>360°空氣清潔</span>
@@ -183,20 +196,23 @@
                             <img class="icon" src="image/p03/p03-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="f18 fgray">
-                        <span>採用嶄新智慧科技，360度吸收四周的環境髒汙依照不同空氣程度，</span>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>採用嶄新智慧科技，360度吸收四周的環境髒汙依照不同空氣程度，轉換不同淨化模式滿足全效需求，速造好環境</span>
                     </div>
-                    <div class="f18 fgray">
-                        <span>轉換不同淨化模式滿足全效需求，速造好環境</span>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="健康呵護管理" data-ga-event="360°空氣清潔" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row animation a3">
-                <div class="col-md-4 col-sm-12 imgleft">
-                    <img class="service_img" src="image/p03/p03-png-02.png" alt="">
-                </div>
-                <div class="col-md-8 f30 text-md-left text-center contentright">
-                    <div class="content2 fred row">
+            <div class="row r3 animation a3">
+                <div class="col-md-7 f30 fm24 text-md-left text-center order-md-1 order-2">
+                    <div class="content3 fred row">
                         <div class="order-md-1 order-2">
                             <span>居家濕度調控</span>
                         </div>
@@ -204,59 +220,82 @@
                             <img class="icon" src="image/p03/p03-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="f18 fgray">
-                        <span>雙迴旋變頻除溼，自動判斷環境濕度調節除溼速度，達到除溼、省電雙重效</span>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>雙迴旋變頻除溼，自動判斷環境濕度調節除溼速度，達到除溼、省電雙重效果確保居家乾爽、安靜、舒適</span>
                     </div>
-                    <div class="f18 fgray">
-                        <span>果確保居家乾爽、安靜、舒適</span>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="健康呵護管理" data-ga-event="居家濕度調控" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12 order-md-2 order-1 innerborder">
+                    <img class="service_img navhidesm" src="image/p03/p03-png-02.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p03/air-png-02.png" alt="">
+                </div>
+            </div>
+            <div class="row animation a4">
+                <div class="col-md-4 col-sm-12 imgleft innerborder">
+                    <img class="service_img navhidesm" src="image/p03/p03-png-03.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p03/air-png-03.png" alt="">
+                </div>
+                <div class="col-md-8 f30 fm24 text-md-left text-center contentright">
+                    <div class="content2 fred row">
+                        <div class="order-md-1 order-2">
+                            <span>雙迴旋變頻 空氣調節</span>
+                        </div>
+                        <div class="order-md-2 order-1 iconright">
+                            <img class="icon" src="image/p03/p03-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>雙迴轉變頻壓縮機節能省電高效率，更快速冷卻、更持久獨特奈米離子，隨著冷流更能淨化空氣 搭載智慧節能，以及智慧顯示，讓居家溫度更貼近家人</span>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="健康呵護管理" data-ga-event="雙迴旋變頻空氣調節" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row r3 animation a4">
-                <div class="col-md-8 f30 text-md-left text-center order-md-1 order-2">
-                    <div class="content3 fred">
-                        <span>雙迴旋變頻 空氣調節</span>
-                        <img class="icon" src="image/p03/p03-icon.png" alt="">
-                    </div>
-                    <div class="f18 fgray">
-                        <span>雙迴轉變頻壓縮機節能省電高效率，更快速冷卻、更持久獨特奈米離子，隨著冷流更</span>
-                    </div>
-                    <div class="f18 fgray">
-                        <span>能淨化空氣 搭載智慧節能，以及智慧顯示，讓居家溫度更貼近家人</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 imgright order-md-2 order-1">
-                    <img class="service_img" src="image/p03/p03-png-03.png" alt="">
-                </div>
-            </div>
+
         </section>
 
         <section id="p4">
-            <div class="row overview" style="background-image: url(image/p04/p04-title-bg.png);margin-top: 200px;">
+            <div class="row overview animation a1 bg" style="">
                 <div class="col-md-12 text-center fwhite">
-                    <div>
+                    <div class="icon">
                         <img src="image/p04/p04-title-icon.png" alt="icon">
                     </div>
                     <div>
-                        <p class="f36 title">
+                        <p class="f36 fm20 title">
                             <span style="border-bottom: 1px solid;padding: 20px 0px;">地板清潔服務</span>
                         </p>
                     </div>
-                    <div class="f18">
+                    <div class="f18 fm16 desc">
                         <div style="margin-top: 40px;">
                             我們的服務讓地板一塵不染，只為了滿足一絲不苟的你
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row animation a2">
                 <div>
-                    <img src="image/p04/p04-line.png" alt="line" class="line" style="margin-top: -146px;right:0px;">
+                    <img src="image/p04/p04-line.png" alt="line" class="line" style="margin-top: -64px;right:-3px;">
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <img class="service_img scaleimg" src="image/p04/p04-png-01.png" alt="">
+                <div class="col-md-4 col-sm-12 innerborder">
+                    <img class="service_img scaleimg navhidesm" src="image/p04/p04-png-01.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p04/floor-png-01.png" alt="">
                 </div>
-                <div class="col-md-8 f30 text-md-left text-center contentleft">
+                <div class="col-md-8 f30 fm24 text-md-left text-center contentleft">
                     <div class="content1 fred row">
 
                         <div class="order-md-1 order-2">
@@ -266,16 +305,22 @@
                             <img class="icon" src="image/p04/p04-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="f18 fgray">
-                        <span>無線手持、直立式的人性設計，滿足您清潔的高要求! 震動除塵螨、十種吸頭</span>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>無線手持、直立式的人性設計，滿足您清潔的高要求! 震動除塵螨、十種吸頭滿足各種環境需求 一指輕觸開關，一手掌握毫不費力</span>
                     </div>
-                    <div class="f18 fgray">
-                        <span>滿足各種環境需求 一指輕觸開關，一手掌握毫不費力</span>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="地板清潔服務" data-ga-event="吸力強勁誰敢較勁" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row r2">
-                <div class="col-md-8 f30 text-md-left text-center order-md-1 order-2">
+            <div class="row r2 animation a3">
+                <div class="col-md-8 f30 fm24 text-md-left text-center order-md-1 order-2">
                     <div class="content2 fred row ">
                         <div class="order-md-1 order-2">
                             <span>智慧清潔機器人</span>
@@ -284,32 +329,557 @@
                             <img class="" src="image/p04/p04-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="f18 fgray">
-                        <span>智慧清潔機器人，讓角落灰塵輕鬆掃除 雙智慧導航偵測、清掃無死角</span>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>智慧清潔機器人，讓角落灰塵輕鬆掃除 雙智慧導航偵測、清掃無死角隨時隨地WiFi遠端監控，讓清潔更全面有效率</span>
                     </div>
-                    <div class="f18 fgray">
-                        <span>隨時隨地WiFi遠端監控，讓清潔更全面有效率</span>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="地板清潔服務" data-ga-event="智慧清潔機器人" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 imgright order-md-2 order-1">
-                    <img class="service_img" src="image/p04/p04-png-02.png" alt="">
+                <div class="col-md-4 col-sm-12 imgright order-md-2 order-1 innerborder">
+                    <img class="service_img navhidesm" src="image/p04/p04-png-02.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p04/floor-png-02.png" alt="">
                 </div>
             </div>
         </section>
+        <section id="p5">
+            <div class="row overview animation a1 bg" style="">
+                <div class="col-md-12 text-center fwhite">
+                    <div class="icon">
+                        <img src="image/p05/p05-title-icon.png" alt="icon">
+                    </div>
+                    <div>
+                        <p class="f36 fm20 title">
+                            <span style="border-bottom: 1px solid;padding: 20px 0px;">衣物護理服務</span>
+                        </p>
+                    </div>
+                    <div class="f18 fm16 desc">
+                        <div style="margin-top: 40px;">
+                            穿著，關係著人與人見面的第一印象，我們細心呵護衣物，如你注重形象那般
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row animation a2">
+                <div class="col-md-6 col-sm-12 innerborder">
+                    <img class="service_img scaleimg navhidesm" src="image/p05/p05-png-01.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p05/wash-png-01.png" alt="">
+                </div>
+                <div class="col-md-6 f30 fm24 text-md-left text-center contentleft">
+                    <div class="content1 fred row">
+
+                        <div class="order-md-1 order-2">
+                            <span>品味生活 衣物護理</span>
+                        </div>
+                        <div class="iconright order-md-2 order-1">
+                            <img class="icon" src="image/p05/p05-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>智慧電子衣櫥獨特蒸氣技術，熱風烘乾、擺動衣架，便可平整衣服烘衣同時減少衣服異味、蒸氣殺菌清新除臭一起來搭配WiFi及時推播、打造有形穿著</span>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="衣物護理服務" data-ga-event="品味生活衣物護理" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r2 animation a3">
+                <div class="col-md-7 f30 fm24 text-md-left text-center order-md-1 order-2">
+                    <div class="content2 fred row ">
+                        <div class="order-md-1 order-2">
+                            <span>上下雙能洗淨</span>
+                        </div>
+                        <div class="iconright order-md-2 order-1">
+                            <img class="" src="image/p05/p05-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>一部雙機設計，上方滾筒洗衣機主要清洗一般大量衣物下方的迷你洗衣機可同時清洗小型與精緻衣物，節省時間一起洗，更有時間陪伴家人</span>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="衣物護理服務" data-ga-event="上下雙能洗淨" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12 imgright order-md-2 order-1 innerborder">
+                    <img class="service_img navhidesm" src="image/p05/p05-png-02.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p05/wash-png-02.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="p6">
+            <div class="row overview animation a1 bg" style="">
+                <div class="col-md-12 text-center fwhite" style="">
+                    <div class="icon">
+                        <img src="image/p06/p06-title-icon.png" alt="icon">
+                    </div>
+                    <div>
+                        <p class="f36 fm20 title">
+                            <span style="border-bottom: 1px solid;padding: 20px 50px;">健康呵護管理</span>
+                        </p>
+                    </div>
+                    <div class="f18 fm16 desc">
+                        <div style="margin-top: 40px;">
+                            我們善於處理空間中各種細菌原與髒污，給你清淨好空間，也給你健康好心情
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row animation a2">
+                <div class="col-md-6 col-sm-12 innerborder">
+                    <img class="service_img scaleimg navhidesm" src="image/p06/p06-png-01.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p06/save-png-01.png" alt="">
+                </div>
+                <div class="col-md-6 f30 fm24 text-md-left text-center contentleft">
+                    <div class="content1 fred row">
+                        <div class="order-md-1 order-2">
+                            <span>多屏監控</span>
+                        </div>
+                        <div class="order-md-2 order-1 iconright">
+                            <img class="icon" src="image/p06/p06-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>14吋僅995g便於隨身攜帶的LG gram輕薄高效筆電 一次充電可使用21.5小時，集輕薄效能與美型於一身 讓您的移動更具機動性，生活更多精彩性</span>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="健康呵護管理" data-ga-event="多屏監控1" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r3 animation a3">
+                <div class="col-md-5 f30 fm24 text-md-left text-center order-md-1 order-2">
+                    <div class="content3 fred row">
+                        <div class="order-md-1 order-2">
+                            <span>多屏監控</span>
+                        </div>
+                        <div class="order-md-2 order-1 iconright">
+                            <img class="icon" src="image/p06/p06-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>嚴選LG OLED自體發光純黑技術，完美色彩與細膩的畫質，讓您在遠端也能置身現場般的監控，搭配webOS3.5智慧系統透過獨特智慧滑鼠遙控器僅需一隻遙控器，就能享受智慧生活</span>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="健康呵護管理" data-ga-event="多屏監控2" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 order-md-2 order-1 innerborder">
+                    <img class="service_img navhidesm" src="image/p06/p06-png-02.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p06/save-png-02.png" alt="">
+                </div>
+            </div>
+            <div class="row animation a4">
+                <div class="col-md-5 col-sm-12 imgleft innerborder">
+                    <img class="service_img navhidesm" src="image/p06/p06-png-03.png" alt="">
+                    <img class="service_img hidemd" src="image/phone/p06/save-png-03.png" alt="">
+                </div>
+                <div class="col-md-7 f30 fm24 text-md-left text-center contentright">
+                    <div class="content2 fred row">
+                        <div class="order-md-1 order-2">
+                            <span>手機貼心推播</span>
+                        </div>
+                        <div class="order-md-2 order-1 iconright">
+                            <img class="icon" src="image/p06/p06-icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="f18 fm16 fgray desc1">
+                        <span>運用V30+OLED全視野螢幕，搭配LG SmartThinQ APP當您不在家時也能夠過WiFi遠端操控家電，清楚掌握家中狀況。我們更有安心推播，居家安全的每一刻都在手中。</span>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="健康呵護管理" data-ga-event="手機貼心推播" class="btngo1">
+                                    <span class="c-btn__text">了解更多</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="p7">
+            <div class="row overview animation a1 bg" style="">
+                <div class="col-md-12 text-center fwhite" style="">
+                    <div class="icon">
+                        <img src="image/p07/p07-icon.png" alt="icon">
+                    </div>
+                    <div style="">
+                        <p class="f36 fm20 title fmedium">
+                            <span style="">我們重視居家管理的程度超乎您想像！</span>
+                        </p>
+                        <p class="f36 fm20 title fmedium">
+                            <span class="underline" style="">一切為了帶給您更好的生活</span>
+                        </p>
+                    </div>
+                    <div class="f24 fm12 desc fdemilight">
+                        <div style="margin-top: 40px;">
+                            <div class="fdemilight">現在開始立即填寫資料即可享受我們全新的服務</div>
+                            <div class="fdemilight">你就有機會體驗獲得最具智慧的LG產品</div>
+                            <div class="fdemilight">就用LG智慧科技家電為生活添增精彩吧</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="arrowicon" src="image/p07/p07-arrow.png" alt="">
+                    </div>
+                    <div class="f18 fm12 desc2">
+                        <div style="">
+                            <div>中獎名單會公佈於LG台灣粉絲團</div>
+                            <div>週週抽威秀電影票 活動結束加碼抽新光禮券500元</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="p8">
+            <div class="row">
+                <div class="col-md-12 text-center fred">
+                    <div class="arrow a1 animation">
+                        <img src="image/p02/p02-arrow.png" alt="icon">
+                    </div>
+                    <div class="a1 animation">
+                        <p class="f42 fm28 title fmedium">
+                            <span style="border-bottom: 1px solid #b7004a;">無人家政公司</span>
+                        </p>
+                        <p class="f24 fm20 fgray">
+                            <span style="">請填寫正確資料</span>
+                        </p>
+                    </div>
+                    <div class="a2 animation f22 fm20">
+                        <div>
+                            <input type="text" name="name" class="name" placeholder="*姓名">
+                        </div>
+                        <div>
+                            <input type="text" name="email" class="email" placeholder="*電子信箱">
+                        </div>
+                        <div>
+                            <input type="text" name="phonenumb" class="phonenumb" placeholder="*手機">
+                        </div>
+                        <div>
+                            <input id="address" class="twaddress" />
+                        </div>
+                        <div>
+                            <input type="text" name="addr3" class="addr3" placeholder="*地址">
+                        </div>
+                        <div>
+                            <p class="f18 fm16 fgray desc1">
+                                <input type="checkbox" name="read" class="read" style="width:20px;">
+                                <span style="">我已讀過
+                                    <span class="fred">活動辦法</span>，並同意
+                                    <span class="fred">隱私權條約</span> 同意主辦單位運用此聯絡資訊進行贈獎事宜聯繫</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p id="submit" data-toggle="modal" data-target="#myModal1" class="f18 fm24 fwhite desc mx-auto d-block" style="background-color: #b7004a;padding: 3px;cursor: pointer;">
+                                <span style="">確定</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pf">
+            <div class="row animation active" style="background-color: #3c3c3c;padding: 50px;">
+                <div class="col-md-12 text-center fwhite" style="">
+                    <div class="f12 fm12 desc1" style="font-family: 微軟正黑體;">
+
+                        Copyright © 2009-2018 LG Electronics. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal fade modal2" id="myModal1" style="background-color: rgba(44, 44, 44, 0.9);">
+        <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 90vh;">
+            <div class="modal-content" style="background-color: transparent;border: 0;">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" style="color: #ffffff;opacity: 1;font-size: 20px;border: 1px solid;padding: 5px 10px;border-radius: 2px;">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body" style="color: #fff;text-align: center;">
+                    <div>
+                        <img src="image/p08/p08-icon-plane.png" alt="">
+                    </div>
+                    <div class="f42 fm24">
+                        <p>
+                            <span class="underline">恭喜成功參與</span>
+                        </p>
+                    </div>
+                    <div class="f24 fm16">
+                        <p>
+                            <span>您將有機會獲得</span>
+                        </p>
+                        <p>
+                            <span>CordZero A9無線吸塵器或V30+</span>
+                        </p>
+                    </div>
+                    <div class="f18 fm12">
+                        <p>
+                            <span>中獎名單會公佈於LG台灣粉絲團</span>
+                        </p>
+                        <p>
+                            <span>週週抽威秀電影票 活動結束加碼抽新光禮券500元</span>
+                        </p>
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="分享" data-ga-event="直接分享" class="btngo1 share" style="color: #fff; border-color: #fff;">
+                                    <span class="c-btn__text">分享</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade modal2" id="myModal2" style="background-color: rgba(44, 44, 44, 0.9);">
+        <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 90vh;">
+            <div class="modal-content" style="background-color: transparent;border: 0;">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" style="color: #ffffff;opacity: 1;font-size: 20px;border: 1px solid;padding: 5px 10px;border-radius: 2px;">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body" style="color: #fff;text-align: center;">
+                    <div>
+                        <img src="image/p08/p08-icon-plane.png" alt="">
+                    </div>
+                    <div class="f42 fm20">
+                        <p>
+                            <span class="underline">您確定要放棄抽獎機會</span>
+                        </p>
+                    </div>
+                    <div class="f24 desc fm16">
+                        <p>
+                            <span>記得分享內文才能參加抽獎唷~分享越多週週抽機會越高</span>
+                        </p>
+                    </div>
+                    <div class="arrow">
+                        <img src="image/p08/p08-arrow.png" alt="">
+                    </div>
+                    <div class="row title f18 fm16" style="">
+                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
+                            <div class="c-btn__inner">
+                                <a href="#" data-ga-category="分享" data-ga-event="放棄後分享" class="btngo1 share" style="color: #fff; border-color: #fff;">
+                                    <span class="c-btn__text">分享</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade modal2" id="menu" style="background-color: rgba(44, 44, 44, 0.9);">
+        <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 98vh;">
+            <div class="modal-content" style="background-color: transparent;border: 0;">
+                <div class="modal-header" style="border-bottom: 0;">
+                    <button type="button" class="close" data-dismiss="modal" style="color: #ffffff;opacity: 1;font-size: 20px;border: 1px solid;padding: 5px 10px;border-radius: 2px;">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body fdemilight" style="color: #fff;text-align: center;">
+                    <div>
+                        <p>
+                            <a href="#" class="golink" data-go="#p2" data-ga-category="手機選單" data-ga-event="公司理念">公司理念&nbsp;&nbsp;&nbsp;</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <a href="#" class="sitem" data-ga-category="手機選單" data-ga-event="服務項目">服務項目
+                                <span class="plus">+</span>
+                                <span style="display:none;" class="minus">-</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="sub">
+                        <p>
+                            <a data-ga-category="手機選單" data-ga-event="空氣健康管理" href="#" class="golink" data-go="#p3" style="border-top: 3px solid;padding: 25px 1px 0px 1px; display: inline-block;">空氣健康管理&nbsp;</a>
+                        </p>
+                        <p>
+                            <a data-ga-category="手機選單" data-ga-event="地板清潔服務" href="#" class="golink" data-go="#p4">地板清潔服務&nbsp;</a>
+                        </p>
+                        <p>
+                            <a data-ga-category="手機選單" data-ga-event="衣物護理服務" href="#" class="golink" data-go="#p5">衣物護理服務&nbsp;</a>
+                        </p>
+                        <p>
+                            <a data-ga-category="手機選單" data-ga-event="安心推播服務" href="#" class="golink" data-go="#p6" style="border-bottom: 3px solid;padding: 0px 1px 25px 1px; display: inline-block;">安心推播服務&nbsp;</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <a data-ga-category="手機選單" data-ga-event="安心服務" href="#" class="golink" data-go="#p3">安心服務&nbsp;&nbsp;&nbsp;</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <a data-ga-category="手機選單" data-ga-event="中獎服務" href="#" class="golink" data-go="#p7">中獎服務 +</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="address.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112518342-4"></script>
+
+
+
 
     <script>
+
         $(function () {
-            var distop = 2000;
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-112518342-4');
+
+            $("div a").click(function () {
+                var category = $(this).attr("data-ga-category");
+                var gaevent = $(this).attr("data-ga-event");
+                var link = $(this).attr("href");
+                gtag('event', gaevent, {
+                    'event_category': category,
+                    'event_label': link
+                });
+            });
+
+            function isValidEmailAddress(emailAddress) {
+                var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+                return pattern.test(emailAddress);
+            }
+
+            $("#submit").click(function () {
+                if ($(".name").val() == "") {
+                    alert("請填入姓名喔");
+                    return false;
+                }
+
+                if ($(".email").val() == "") {
+                    alert("請填入電子信箱喔");
+                    return false;
+                }
+
+                if (!isValidEmailAddress($(".email").val())) {
+                    alert("請填入正確的電子信箱喔");
+                    return false;
+                }
+
+                if ($(".phonenumb").val() == "") {
+                    alert("請填入手機喔");
+                    return false;
+                }
+
+                if ($(".addr3").val() == "") {
+                    alert("請填入地址喔");
+                    return false;
+                }
+
+                if (!$('.read').is(":checked")) {
+                    alert("請勾選已閱讀活動辦法和隱私權條約喔");
+                    return false;
+                }
+
+                $.post("new.php", {
+                    name: $(".name").val(),
+                    email: $(".email").val(),
+                    phonenumb: $(".phonenumb").val(),
+                    addr1: $(".addr1 option:selected").text(),
+                    addr2: $(".addr2 option:selected").text(),
+                    addr3: $(".addr3").val(),
+                    type: 'new'
+                }).done(function (data) {
+                    $.post("admin/string.php", {
+                        id: data,
+                        name: $(".name").val()
+                    });
+                });
+            });
+
+
+            var $target = $('html,body');
+
+            $(".golink").click(function () {
+                $('#menu').modal('hide');
+                var target = $(this).attr("data-go");
+                $target.animate({ scrollTop: $(target).position().top }, 1000);
+            })
+
+            $(".sitem").click(function () {
+                $(".sub").toggleClass("active");
+                $(".minus").toggle();
+                $(".plus").toggle();
+            });
+
+            $('#myModal1').on('hidden.bs.modal', function (e) {
+                $('#myModal2').modal('show');
+                gtag('event', '第一次放棄', {
+                    'event_category': '放棄分享',
+                    'event_label': '#'
+                });
+            })
+
+            $('#myModal2').on('hidden.bs.modal', function (e) {
+                gtag('event', '第二次放棄', {
+                    'event_category': '放棄分享',
+                    'event_label': '#'
+                });
+            })
+
+
+            var distop = 1100;
             $(window).scroll(function () {
                 if ($(this).scrollTop() > ($("#p2 .a1").position().top + distop)) {
                     $("#p2 .a1").addClass("active");
@@ -340,6 +910,60 @@
                 if ($(this).scrollTop() > ($("#p3 .a4").position().top - distop)) {
                     $("#p3 .a4").addClass("active");
                 }
+
+                if ($(this).scrollTop() > ($("#p4 .a1").position().top - distop)) {
+                    $("#p4 .a1").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p4 .a2").position().top - distop)) {
+                    $("#p4 .a2").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p4 .a3").position().top - distop)) {
+                    $("#p4 .a3").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p5 .a1").position().top - distop)) {
+                    $("#p5 .a1").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p5 .a2").position().top - distop)) {
+                    $("#p5 .a2").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p5 .a3").position().top - distop)) {
+                    $("#p5 .a3").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p6 .a1").position().top - distop)) {
+                    $("#p6 .a1").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p6 .a2").position().top - distop)) {
+                    $("#p6 .a2").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p6 .a3").position().top - distop)) {
+                    $("#p6 .a3").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p6 .a4").position().top - distop)) {
+                    $("#p6 .a4").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p7 .a1").position().top - distop)) {
+                    $("#p7 .a1").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p8 .a1").position().top - distop)) {
+                    $("#p8 .a1").addClass("active");
+                }
+
+                if ($(this).scrollTop() > ($("#p8 .a2").position().top - distop)) {
+                    $("#p8 .a2").addClass("active");
+                }
+
+
 
 
 

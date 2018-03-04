@@ -1,13 +1,13 @@
 <?php
 
-
+ 
 $conn = mysql_connect('DB.Server', '2lgaitechcare', 'AiteCH0950');
 if (!$conn) {
 　die(' 連線失敗，輸出錯誤訊息 : ' . mysql_error());
 }
 echo ' 連線成功 ';
 mysql_select_db("2_lgaitechcare",$conn);
-
+ 
 // This could be supplied by a user, for example
 $firstname = 'fred';
 $lastname  = 'fox';
