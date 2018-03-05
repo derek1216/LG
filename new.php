@@ -11,16 +11,15 @@ $fb_name= $_POST["fb_name"];
 $fb_id= $_POST["fb_id"];
 
 $host = $_SERVER['HTTP_REFERER'];
-
-if($host =="https://2lg_aitechcare.ptt.com.tw/" || $host =="https://lg_aitechcare.ptt.com.tw/"){
-    if($host !="https://2lg_aitechcare.ptt.com.tw/"){
+if (strpos($host, 'aitechcare.ptt.com') !== false) {
+    if (strpos($host, '2') !== false) {
+        $dbname = "2_lgaitechcare";
+        $dbuser = "2lgaitechcare";
+        $dbpsw ="AiteCH0950";   
+    }else{
         $dbname = "R_lgaitechcare";
         $dbuser = "Rlgaitechcare";
         $dbpsw ="LgAiTe0955";
-    }else{
-        $dbname = "2_lgaitechcare";
-        $dbuser = "2lgaitechcare";
-        $dbpsw ="AiteCH0950";
     }
     
     
@@ -51,6 +50,6 @@ if($host =="https://2lg_aitechcare.ptt.com.tw/" || $host =="https://lg_aitechcar
 
     echo $maxid;
 }else{
-    echo "errorhost";
+    echo "errorhost - ".$host;
 }
 ?>

@@ -1,5 +1,18 @@
 
 @media (max-width: 575.98px) { 
+
+    .overview .title{
+        letter-spacing: 7px;
+        padding: 3px;        
+    }
+    .mmenu a{
+        letter-spacing: 3px;
+    }
+
+    .mmenu .sub a{
+        letter-spacing: 2px;
+    }
+
     #p7 span{
         letter-spacing: 0;
     }
@@ -82,6 +95,12 @@
         display: block;
         transition: all 0.5s cubic-bezier(0.0, 0.0, 1.0, 1.0);
         border-radius: 5px;
+        letter-spacing: 1px;      
+    }
+
+    .btngo1:active{      
+        color: #000;
+        background-color: rgb(192, 188, 188);
     }
 
     .btngo1:hover{      
@@ -93,7 +112,7 @@
         background-image: url('image/index/bg.png');
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 10100px;
     }
 
     .bg{
@@ -149,15 +168,19 @@
     }
 
     #p1 .title{
-        margin-top: 15px;
+        margin-top: 0px;
     }
 
     #p1 .title span{
-        padding: 0 10px 10px 15px;
+        padding: 0 10px 5px 15px;
+        letter-spacing: 5px;
+        font-weight: 400;
     }
 
     #p1 .content{
         margin: 50px 0 100px 0px;
+        letter-spacing: 1.5px;
+        line-height: 1.8;
     }
 
     #p2 .arrow img{
@@ -165,7 +188,9 @@
     }
 
     #p2 .title span{
-        padding: 0 40px 10px 40px;
+        padding: 0px 10px 5px 15px;
+        letter-spacing: 5px;
+        font-weight: 400;
     }
 
     .col-sm-12{
@@ -174,6 +199,11 @@
 
     #p2 .arrow{
         margin-top: 50px;
+    }
+
+    #p2 .fgray{
+        letter-spacing: 1.5px;
+        line-height: 1.8;
     }
 
     #p2 .service_img {
@@ -224,6 +254,10 @@
         width:100%;
     }
 
+    #p2 .content2 > div span{
+        border-bottom:0px;
+    }
+
     .content1 > div span,.content2 > div span, .content3 > div span{
         border-bottom:1px solid #b7004a;
         padding-bottom: 5px;
@@ -256,7 +290,7 @@
     }
 
     #p7 .a1 .icon{
-        margin: 30px 0 10px 0;
+        margin: 30px 0;
     }
 
     #p7 .arrowicon{
@@ -293,7 +327,6 @@
         background-size: contain;
         border: 1px solid;
         padding: 0 10px;
-        text-align: center;
     }
 
     #p7 .a1 .desc{
@@ -306,10 +339,8 @@
 
     #p8 select{
         margin: 0 10px 20px 10px;
-        width:140px;
+        width:130px;
         padding: 3px 5px;
-        text-align-last: center;
-        color: #aaa;
     }
 
     #p8 input:focus,#p8 select:focus{
@@ -349,12 +380,20 @@
         transform: scale(0.6);
     }
 
+    .fm12{
+        font-size: 12pt;
+    }
+
+    .fm14{
+        font-size: 14pt;
+    }
+
     .fm16{
         font-size: 16pt;
     }
 
     .fm24{
-        font-size: 24pt;
+        font-size: 22pt;
     }
 
     .fm20{
@@ -800,6 +839,12 @@
         display: block;
         transition: all 0.2s cubic-bezier(0.0, 0.0, 1.0, 1.0);
         border-radius: 5px;
+        letter-spacing: 1px;        
+    }
+
+    .btngo1:active{      
+        color: #000;
+        background-color: rgb(192, 188, 188);
     }
 
     .btngo1:hover{      
@@ -971,12 +1016,23 @@ a:hover {
     font-family: 'Roboto', 'Segoe UI', 'Segoe UI Light', 'Myriad Set Pro', NotoSansHant, 'Microsoft JhengHei', 微軟正黑體, 'Heiti TC', 'Microsoft YaHei', 微軟雅黑體, simhei, PMingLiU, 新細明體, Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, 'ＭＳ Ｐゴシック', 'Malgun Gothic', Dotum, Gulim, 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;    
 }
 
-/* .fmedium{
-    font-family: Medium;
-    font-weight: 600;
+ .fmedium{
+    /* font-family: Medium; 
+    font-weight: 600;*/
 }
 
 .fdemilight{
     font-family: DemiLight;
 } */
 
+
+
+    .modal .closebtn{
+        color: #ffffff;
+        opacity: 1;
+        font-size: 20px;
+        border: 1px solid;
+        padding: 3px 9px 6px 9px;
+        border-radius: 2px;
+        font-weight: 100;
+    }

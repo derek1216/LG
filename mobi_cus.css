@@ -1,0 +1,44 @@
+@media (max-width: 575.98px) { 
+    #p8 .desc1 input{
+        margin-bottom: 0px;
+    }
+
+    #p8 #submit span{
+        font-size: 20pt;
+        letter-spacing:15px;        
+    }
+
+    .mcus1{
+        letter-spacing: 3px;        
+    }
+
+    .mcus2{
+        letter-spacing: 1px;        
+    }
+
+    #p7 .mcus3 span{
+        font-size:19pt;
+        letter-spacing:3px;        
+    }
+
+    #p7 .mcus4{
+        margin-bottom: 0;
+    }
+
+    #p7 .mcus5{
+        letter-spacing:2px;
+    }
+
+    #p7 .mcus6{
+        transform: scale(0.8);
+    }
+
+    .mtrs8{
+        transform: scale(0.8);
+    }
+
+    a.btngo1{
+        letter-spacing:1px;
+    }
+
+}
