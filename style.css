@@ -1,5 +1,19 @@
 
-@media (max-width: 575.98px) { 
+@media (max-width: 769px) { 
+
+    .mmenu a{
+        letter-spacing:3px;
+    }
+
+    .mmenu .sub a{
+        letter-spacing:2px;
+    }
+
+    .mmenu .sub{
+        position: relative;
+        left: -13px;
+    }
+
     #p7 span{
         letter-spacing: 0;
     }
@@ -30,16 +44,44 @@
         
     }
 
+    @keyframes slideDown {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: auto; /* height of your smallest content, e.g. one line */
+        }
+    }
+
     #menu .sub{
-        margin: 30px 0px;
-        height: 0px;
-        display:none;
-        transition: all 0.5s cubic-bezier(0.0, 0.0, 1.0, 1.0);
+        max-height: 0;            
+        overflow-y: hidden;
+        -webkit-transition: max-height 0.5s ease-in-out;
+        -moz-transition: max-height 0.5s ease-in-out;
+        -o-transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
+        /*display:none;
+         transition: all 0.5s cubic-bezier(0.0, 0.0, 1.0, 1.0); */
+    }
+
+    .sitem{
+        -webkit-transition: top 0.5s ease-in-out;
+        -moz-transition: top 0.5s ease-in-out;
+        -o-transition: top 0.5s ease-in-out;
+        transition: top 0.5s ease-in-out;
+        position: relative;
+        top: 0px;
+        left: -2px;
+    }
+
+    .sitem.active{
+        top: -10px;
+        left: -2px;
+
     }
 
     #menu .sub.active{
-        height: auto;
-        display:block;
+        max-height:230px ;     
     }
 
     .navhidesm{
@@ -149,15 +191,17 @@
     }
 
     #p1 .title{
-        margin-top: 15px;
+        margin-top: 0px;
     }
 
     #p1 .title span{
-        padding: 0 10px 10px 15px;
+        padding: 0 10px 5px 15px;
     }
 
     #p1 .content{
         margin: 50px 0 100px 0px;
+        letter-spacing: 1.5px;
+        line-height: 1.8;
     }
 
     #p2 .arrow img{
@@ -165,7 +209,9 @@
     }
 
     #p2 .title span{
-        padding: 0 40px 10px 40px;
+        padding: 0 10px 5px 15px;
+        letter-spacing: 5px;
+        font-weight: 400;
     }
 
     .col-sm-12{
@@ -176,6 +222,7 @@
         margin-top: 50px;
     }
 
+    
     #p2 .service_img {
         margin: 50px 0;
     }
@@ -291,7 +338,7 @@
         width: 85%;
         background-image: url(image/index/bg.png);
         background-size: contain;
-        border: 1px solid;
+        border: 1px solid #b7004a;
         padding: 0 10px;
         text-align: center;
     }
@@ -365,6 +412,10 @@
         font-size: 28pt;
     }
 
+    .fm22{
+        font-size: 22pt;
+    }
+
     .menuicon{
         position: absolute;
         right: 20px;
@@ -375,7 +426,7 @@
  }
 
 
-@media (min-width: 576px)  { 
+@media (min-width: 770px)  { 
 
     .mask{
         display: none;
@@ -944,7 +995,6 @@ img {
 
 .overview .title {
     letter-spacing: 8px;
-    font-weight: 600;
 }
 
 a:hover {
@@ -980,3 +1030,6 @@ a:hover {
     font-family: DemiLight;
 } */
 
+.btngo1:active {
+    background-color: #ddd;
+}

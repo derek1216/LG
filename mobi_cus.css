@@ -41,4 +41,14 @@
         letter-spacing:1px;
     }
 
+    .modal .closebtn{
+        color: #ffffff;
+        opacity: 1;
+        font-size: 20px;
+        border: 1px solid;
+        padding: 3px 9px 6px 9px;
+        border-radius: 2px;
+        font-weight: 100;
+    }
+
 }

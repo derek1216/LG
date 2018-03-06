@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href=" mobi_cus.css">
-   
+
     <link rel="stylesheet" href="innerborder.css">
     <title>LG無人家政公司</title>
 </head>
@@ -27,9 +27,12 @@
                     <img src="image/menu.png" alt="">
                 </div>
                 <div class="content">
-                    <div class="row logo" style="">
-                        <img src="image/index/LOGO.png" alt="">
-                    </div>
+                <div class="row logo" style="">
+                    <img src="image/index/LOGO.png" alt="">
+                </div>
+                </div>
+                <div class="content">
+
                     <div class="row">
                         <img src="image/index/index-line.png" alt="line" class="line">
                     </div>
@@ -123,7 +126,58 @@
                             <span style="border-bottom: 1px solid #b7004a;">兩大特色</span>
                         </p>
                     </div>
-                    <div class="row a2 animation">
+
+                    <div id="carouselExampleIndicators" class="carousel slide hidemd" data-ride="carousel">
+                        <ol class="carousel-indicators" style="bottom: -14px;">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row a2">
+                                    <div>
+                                        <img src="image/p02/p02-line.png" alt="line" class="line" style="right: 0;">
+                                    </div>
+                                    <div class="col-md-7 col-sm-12">
+                                        <img class="service_img" src="image/phone/p02/p02-png-01.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 f30 text-md-left text-center bgnumb1" style="background-repeat: no-repeat;background-position: 100% 121px;">
+                                        <div class="content fm24 fmedium">
+                                            <span>無人服務</span>
+                                            <img src="image/p02/p02-icon-eye.png" alt="" class="icon">
+                                        </div>
+                                        <div class="f26 fm14 fgray desc" style="margin-bottom: 40px;">
+                                            <span>專業智能科技，灰塵無所遁形</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="row a3">
+                                    <div>
+                                        <img src="image/p02/p02-line02.png" alt="line" class="line" style="left: 36.2%;">
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 order-md-1 order-2 f30 text-md-left text-center bgnumb2" style="background-repeat: no-repeat;background-position: 0 139px;">
+                                        <div class="content2 fm24 fmedium">
+                                            <div class="row">
+                                                <img class="order-md-1 order-2 icon" src="image/p02/p02-icon-hourglass.png" alt="">
+                                                <span class="order-md-2 order-1" style="border-bottom: 0px solid #b7004a;padding-bottom: 0px;">無虛耗時</span>
+                                            </div>
+                                        </div>
+                                        <div class="f26 fgray fm14" style="margin-bottom: 40px;">
+                                            <span>24小時全天服務，高效為你管理生活</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12 order-md-2 order-1">
+                                        <img class="service_img" src="image/phone/p02/p02-png-02.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row a2 animation navhidesm">
                         <div>
                             <img src="image/p02/p02-line.png" alt="line" class="line" style="right: 0;">
                         </div>
@@ -140,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row a3 animation">
+                    <div class="row a3 animation navhidesm">
                         <div>
                             <img src="image/p02/p02-line02.png" alt="line" class="line" style="left: 36.2%;">
                         </div>
@@ -717,7 +771,7 @@
                     <button type="button" class="close closebtn" data-dismiss="modal" style="">&times;</button>
                 </div>
                 <!-- Modal body -->
-                <div class="modal-body fdemilight mmenu" style="color: #fff;text-align: center;">
+                <div class="modal-body fdemilight mmenu" style="color: #fff;text-align: center;position: relative;left: 11px;">
                     <div>
                         <p>
                             <a href="#" class="golink" data-go="#p2" data-ga-category="手機選單" data-ga-event="公司理念">公司理念&nbsp;&nbsp;&nbsp;</a>
@@ -803,7 +857,7 @@
                 return pattern.test(emailAddress);
             }
 
-            var userid ="";
+            var userid = "";
             $("#submit").click(function () {
                 if ($(".name").val() == "") {
                     alert("請填入姓名喔");
@@ -852,7 +906,7 @@
                 });
             });
 
-            $(".send_share").click(function(){
+            $(".send_share").click(function () {
                 window.location = "share.html?id=" + userid;
             });
 
@@ -867,6 +921,8 @@
 
             $(".sitem").click(function () {
                 $(".sub").toggleClass("active");
+                $(".sitem").toggleClass("active");
+                
                 $(".minus").toggle();
                 $(".plus").toggle();
             });
@@ -885,7 +941,7 @@
                     'event_label': '#'
                 });
             })
-$(".mask").css("height",($("#p8").position().top + 400));
+            $(".mask").css("height", ($("#p8").position().top + 400));
 
             var distop = 1100;
             $(window).scroll(function () {
