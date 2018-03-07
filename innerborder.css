@@ -44,7 +44,7 @@
     }
 
 }
-@media (min-width: 576px)  { 
+@media (min-width: 1025px)  { 
     .innerborder::before{
         transform: scale(1.05);
         bottom: 10px;
@@ -69,8 +69,8 @@
 
     #p3 .a3 .innerborder::before {
         height: 97%;
-        width: 96%;
-        left: 10px;
+        width: 91%;
+        left: 23px;
         top: 10px;
     }
 
@@ -96,7 +96,7 @@
     }
     
     #p4 .a3 .innerborder::before{
-        height: 93%;
+        height: 95%;
         width: 89%;
         left: 24px;
         top: 10px;
@@ -109,6 +109,13 @@
         top: 10px;
     }
 
+    #p5 .a3 .innerborder::before{
+        height: 97%;
+        width: 91%;
+        left: 24px;
+        top: 10px;
+    }
+    
     #p6 .innerborder::before{
         height: 95%;
         width: 93%;
@@ -118,7 +125,7 @@
 
     #p6 .a3 .innerborder::before{
         height: 96%;
-        width: 93%;
+        width: 94%;
         left: 24px;
         top: 10px;
     }

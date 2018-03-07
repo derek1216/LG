@@ -1,4 +1,27 @@
-@media (max-width: 575.98px) { 
+@media (max-width: 769px) { 
+
+    .bg > div.fwhite{
+        background-image: url(/image/phone/index/guide-line.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: auto;
+    }
+
+    #p1 .bg > div.fwhite{
+        background-image: url(/image/phone/p01/next-line.png);
+    }
+
+    .overview .title span{
+        letter-spacing:7px;
+        padding:3px;        
+    }
+
+    .overview .desc div{
+        font-size:14pt;
+        margin-top:30px;
+        letter-spacing:2px;             
+    }
+
     #p8 .desc1 input{
         margin-bottom: 0px;
     }
