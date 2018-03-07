@@ -50,33 +50,33 @@
         bottom: 10px;
         right: 10px;
         z-index: 9999;
-        
+        z-index: 0;
     }
 
     #p2 .innerborder::before{
-        height: 95%;
-        width: 97%;
+        height: 96%;
+        width: 98%;
         left: 10px;
         top: 10px;
     }
 
     #p3 .innerborder::before{
-        height: 95%;
-        width: 117%;
+        height: 96%;
+        width: 120%;
         left: 24px;
-        top: 10px;
+        top: 12px;
     }
 
     #p3 .a3 .innerborder::before {
         height: 97%;
-        width: 91%;
-        left: 23px;
-        top: 10px;
+        width: 93%;
+        left: 24px;
+        top: 12px;
     }
 
     #p3 .a4 .innerborder::before {
         height: 97%;
-        width: 89%;
+        width: 92%;
         left: 24px;
         top: 10px;
     }
@@ -89,52 +89,59 @@
     }
 
     #p4 .a2 .innerborder::before{
-        height: 97%;
-        width: 89%;
+        height: 98%;
+        width: 92%;
         left: 24px;
         top: 10px;
     }
     
     #p4 .a3 .innerborder::before{
-        height: 95%;
-        width: 89%;
+        height: 96%;
+        width: 92%;
         left: 24px;
         top: 10px;
     }
 
     #p5 .innerborder::before{
         height: 97%;
-        width: 93%;
-        left: 24px;
+        width: 95%;
+        left: 23px;
         top: 10px;
     }
 
     #p5 .a3 .innerborder::before{
-        height: 97%;
-        width: 91%;
-        left: 24px;
+        height: 98%;
+        width: 93%;
+        left: 27px;
         top: 10px;
     }
     
     #p6 .innerborder::before{
-        height: 95%;
-        width: 93%;
+        height: 96%;
+        width: 95%;
         left: 24px;
         top: 10px;
     }
 
     #p6 .a3 .innerborder::before{
-        height: 96%;
+        height: 97%;
+        width: 95%;
+        left: 28px;
+        top: 10px;
+    }
+
+    #p6 .a4 .innerborder::before{
+        height: 98%;
         width: 94%;
         left: 24px;
         top: 10px;
     }
 
-    #p6 .a4 .innerborder::before{
+    #p3 .a5 .innerborder::before {
         height: 97%;
-        width: 91%;
+        width: 95%;
         left: 24px;
-        top: 10px;
+        top: 12px;
     }
 }
 
@@ -149,5 +156,5 @@
     position: absolute;
     opacity: 0;
     content: '';
-    transition: all 0.4s cubic-bezier(0.42, 0, 1.0, 1.0);
+    transition: all 1s cubic-bezier(0.42, 0, 1.0, 1.0);
 }

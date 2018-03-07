@@ -1,4 +1,21 @@
 @media (max-width: 769px) { 
+.privacy{
+    width:100%;
+}
+
+    section,section > .row {
+        background-image: url(image/index/bg.png);
+        position: relative;
+    }
+
+    .topbtn{
+        display: none;
+    }
+
+    #p7 .overview .desc div{
+        margin-top: 0px; 
+        letter-spacing:1px;    
+    }
 
     .bg > div.fwhite{
         background-image: url(/image/phone/index/guide-line.png);
@@ -62,6 +79,7 @@
 
     a.btngo1{
         letter-spacing:1px;
+        margin-bottom: 100px;
     }
 
     .modal .closebtn{
