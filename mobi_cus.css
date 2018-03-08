@@ -1,4 +1,67 @@
 @media (max-width: 769px) {
+
+
+    .nextline{
+        background-image: url(/image/phone/p02/next-line.png);
+        background-position: center bottom;
+        background-size: auto;
+        background-repeat: no-repeat;
+        padding-bottom: 30px;
+    }
+
+    .mob_line{
+        position: absolute;
+        z-index: 998;
+    }
+
+    .mob_line1{
+        top:150px;
+    }
+
+    .mob_line2{
+        right:0px;
+        top:150px;
+    }
+
+    #p2 .carousel-indicators .active ,#p9 .carousel-indicators .active{
+        background-color: #333333;
+        border-radius: 50%;
+        width:11px;
+        height:11px;
+    }
+
+    #p2  .carousel-indicators li,#p9  .carousel-indicators li {
+        border: 1px solid #000;
+        border-radius: 50%;
+        width:11px;
+        height:11px;
+    }
+
+    #p7 .overview .desc div{
+        font-size: 11pt;
+    }
+    #p7 .underline{
+        padding-bottom: 5px;
+        border-bottom: 1px solid;
+    }
+    .fm9{
+        font-size: 9pt;
+    }
+    .fm12{
+        font-size: 12pt;
+    }
+
+    .fm11,fdemilight{
+        font-size: 11pt;
+    }
+
+    #pf .desc1 {
+        margin: 20px 0;
+    }
+
+    .read{
+        transform: scale(1.5);
+    }
     #p9 .icon{
         background-image: url(image/phone/three-point-icon.png);
         height: 28px;
@@ -6,6 +69,7 @@
         width: 100%;
         background-repeat: no-repeat;
         margin-bottom: 5px;
+        margin-top:30px;
     }
     #p9 .carousel-indicators {
         bottom: -30px;
@@ -62,7 +126,7 @@
         letter-spacing: 1px;
     }
     #p7 .mcus3 span {
-        font-size: 19pt;
+        font-size: 12pt;
         letter-spacing: 3px;
     }
     #p7 .mcus4 {

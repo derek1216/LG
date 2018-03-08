@@ -1,4 +1,14 @@
 @media (min-width: 770px) {
+
+    .mob_line{
+        display: none  !important;
+    }
+    #pf .active{
+        padding: 50px;
+    }
+    .read{
+        transform: scale(2);
+    }
     #p9 .icon{
         background-image: url(image/three-point-icon.png);
         height: 42px;
@@ -15,11 +25,9 @@
     }
     #p2 .rarrow {
         padding-right: 10px;
-        vertical-align: text-top;
     }
     #p2 .larrow {
         padding-left: 10px;
-        vertical-align: text-top;
     }
     #p2 .content2 {
         text-align: right;

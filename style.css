@@ -391,7 +391,8 @@
     }
 
     #p8 .desc1{
-        margin: 60px 0;
+        margin: 30px 0 40px;
+        padding: 0 9px;
     }
 
     .bg{
@@ -423,7 +424,7 @@
     }
 
     .fm16{
-        font-size: 16pt;
+        font-size: 15pt;
     }
 
     .fm24{
@@ -853,6 +854,7 @@
         float: right;
         position: relative;
         top: -25px;
+        cursor: pointer;
     }
 
     #p8 .desc1{
@@ -1201,4 +1203,12 @@ a:hover {
 
 #p9 .c-btn{
     margin-bottom: 50px;
+}
+
+#p9 {
+    display: none;
+}
+
+#p8{
+    display: none;
 }
