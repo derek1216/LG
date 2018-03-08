@@ -1,91 +1,128 @@
-@media (min-width: 770px)  { 
-
-    #p1 .content{
+@media (min-width: 770px) {
+    #p9 .icon{
+        background-image: url(image/three-point-icon.png);
+        height: 42px;
+        background-position-x: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+    }
+    #p1 .content {
         padding: 0px 117px;
     }
-
-    .block_line.z100{
+    .block_line.z100 {
         z-index: 999;
     }
-
-    #p2 .rarrow{
+    #p2 .rarrow {
         padding-right: 10px;
+        vertical-align: text-top;
     }
-
-    #p2 .larrow{
+    #p2 .larrow {
         padding-left: 10px;
+        vertical-align: text-top;
     }
-
-    #p2 .content2{
+    #p2 .content2 {
         text-align: right;
         padding-right: 32px;
     }
-
     #p2 .fgray {
         letter-spacing: -0.09em;
     }
-
-    .leftarrow::before{
+    .leftarrow::before {
         content: '<';
         font-size: 15px;
         position: absolute;
         left: 0px;
-        font-weight: bold; 
+        font-weight: bold;
         margin-top: 8px;
     }
-
-    .rightarrow::before{
+    .rightarrow::before {
         content: '>';
         font-size: 15px;
         position: absolute;
         left: 0px;
-        font-weight: bold; 
+        font-weight: bold;
         margin-top: 8px;
     }
-
-    #p3 .a2 .desc1{
+    #p6 .a3 .rightarrow::before {
+        margin-top: 6px;
+        left: -18px;
+    }
+    #p3 .a2 .desc1 {
         padding-right: 80px;
     }
-
-    #p3 .a4 .desc1{
+    #p3 .a4 .desc1 {
         padding-right: 310px;
     }
-
-    #p3 .r5{
+    #p3 .r5 {
         padding-left: 319px;
     }
-
-    #p5 .line1{
+    #p5 .line1 {
         left: 0;
         top: -146px;
     }
-
-    #p5 .line2{
+    #p5 .line2 {
         top: 757px;
         right: -7px;
     }
-
-    #p6 .a3 .col-md-5{
+    #p6 .a3 .col-md-5 {
         padding-left: 140px;
         margin-top: 300px;
     }
-
-    #p6 .a4 .desc1{
+    #p6 .a4 .desc1 {
         padding-right: 240px;
     }
-
-    #p6 .line1{
+    #p6 .line1 {
         margin-top: 161px;
     }
-
-    #p6{
+    #p6 {
         padding-bottom: 200px;
         background-image: url(image/p06/p06-dot.png);
         background-repeat: no-repeat;
         background-position: center bottom;
     }
+    .colorline {
+        background-image: url(image/index/color-line.png);
+        width: 40px;
+        height: 5px;
+        position: relative;
+    }
+    .colorline1 {
+        float: right;
+        margin-right: 70px;
+        top: 150px;
+    }
+    .colorline2 {
+        top: 400px;
+        left: -100px;
+    }
+    .colorline3 {
+        top: 300px;
+        left: -50px;
+    }
+    .colorline4 {
+        top: 400px;
+    }
+    .colorline5 {
+        float: right;
+    }
+    .colorline6 {
+        float: right;
+        top: 300px;
+        right: -47px;
+    }
+    .colorline7 {
+        top: 100px;
+    }
+    .colorline-red {
+        background-image: url(image/index/color-line.png);
+        width: 40px;
+        height: 5px;
+        position: relative;
+        background-position-y: bottom;
+    }
 }
 
-.modal-header .close{
+.modal-header .close {
     padding: 0px;
 }

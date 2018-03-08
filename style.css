@@ -85,7 +85,7 @@
     }
 
     .navhidesm{
-        display:none;
+        display:none !important;
     }
 
 
@@ -136,6 +136,22 @@
     }
 
     .btngo1:hover{      
+        background-position-y: bottom;
+    }
+
+    .btngo5{
+        padding: 7px 85px;
+        margin: 20px;        
+        color: #000;
+        display: block;
+        border-radius: 5px;
+        background-image: url(image/phone/sign-in-button.png);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        height: 47px;
+    }
+
+    .btngo5:hover{      
         background-position-y: bottom;
     }
 
@@ -476,6 +492,14 @@
     .f18{
         font-size: 17pt;
     }
+
+    .f19{
+        font-size: 19pt;
+    }
+
+    .f20{
+        font-size: 20pt;
+    }
     
      .f22{
          font-size: 22pt;
@@ -582,11 +606,11 @@
         margin-top: 135px;
     }
 
-    #p2 .title{
+    #p2 .title,#p9 .title{
         padding: 20px 150px;
     }
 
-    #p2 .title span{
+    #p2 .title span,#p9 .title span{
         padding: 0 70px 10px 70px;
     }
 
@@ -609,7 +633,7 @@
         display: block;
     }
 
-    #p2 .arrow,#p8 .arrow{
+    #p9 .arrow,#p2 .arrow,#p8 .arrow{
         margin-top: 100px;
         margin-bottom: 20px;
     }
@@ -920,6 +944,22 @@
         background-position-y: bottom;
     }
 
+    .btngo5{
+        padding: 7px 85px;
+        margin: 20px;        
+        color: #000;
+        display: block;
+        border-radius: 5px;
+        background-image: url(image/sign-in-button.png);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        height: 47px;
+    }
+
+    .btngo5:hover{      
+        background-position-y: bottom;
+    }
+
     .btngo2{
         padding: 10px 60px;
         border: 1px solid #000;
@@ -1157,4 +1197,8 @@ a:hover {
 .modal-header img.close
 {
     opacity:1;
+}
+
+#p9 .c-btn{
+    margin-bottom: 50px;
 }

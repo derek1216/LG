@@ -1,88 +1,87 @@
-@media (max-width: 769px) { 
-.privacy{
-    width:100%;
-}
-
-    section,section > .row {
+@media (max-width: 769px) {
+    #p9 .icon{
+        background-image: url(image/phone/three-point-icon.png);
+        height: 28px;
+        background-position-x: center;
+        width: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+    }
+    #p9 .carousel-indicators {
+        bottom: -30px;
+    }
+    #p9 .carousel-item img {
+        margin: 30px auto;
+    }
+    .privacy {
+        width: 100%;
+    }
+    .carousel {
+        margin-bottom: 50px;
+    }
+    section, section>.row {
         background-image: url(image/index/bg.png);
         position: relative;
     }
-
-    .topbtn{
+    .topbtn {
         display: none;
     }
-
-    #p7 .overview .desc div{
-        margin-top: 0px; 
-        letter-spacing:1px;    
+    #p7 .overview .desc div {
+        margin-top: 0px;
+        letter-spacing: 1px;
     }
-
-    .bg > div.fwhite{
+    .bg>div.fwhite {
         background-image: url(/image/phone/index/guide-line.png);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: auto;
     }
-
-    #p1 .bg > div.fwhite{
+    #p1 .bg>div.fwhite {
         background-image: url(/image/phone/p01/next-line.png);
     }
-
-    .overview .title span{
-        letter-spacing:7px;
-        padding:3px;        
+    .overview .title span {
+        letter-spacing: 7px;
+        padding: 3px;
     }
-
-    .overview .desc div{
-        font-size:14pt;
-        margin-top:30px;
-        letter-spacing:2px;             
+    .overview .desc div {
+        font-size: 14pt;
+        margin-top: 30px;
+        letter-spacing: 2px;
     }
-
-    #p8 .desc1 input{
+    #p8 .desc1 input {
         margin-bottom: 0px;
     }
-
-    #p8 #submit span{
+    #p8 #submit span {
         font-size: 20pt;
-        letter-spacing:15px;        
+        letter-spacing: 15px;
     }
-
-    .mcus1{
-        letter-spacing: 3px;        
+    .mcus1 {
+        letter-spacing: 3px;
     }
-
-    .mcus2{
-        letter-spacing: 1px;        
+    .mcus2 {
+        letter-spacing: 1px;
     }
-
-    #p7 .mcus3 span{
-        font-size:19pt;
-        letter-spacing:3px;        
+    #p7 .mcus3 span {
+        font-size: 19pt;
+        letter-spacing: 3px;
     }
-
-    #p7 .mcus4{
+    #p7 .mcus4 {
         margin-bottom: 0;
     }
-
-    #p7 .mcus5{
-        letter-spacing:2px;
+    #p7 .mcus5 {
+        letter-spacing: 2px;
     }
-
-    #p7 .mcus6{
+    #p7 .mcus6 {
         transform: scale(0.8);
     }
-
-    .mtrs8{
+    .mtrs8 {
         transform: scale(0.8);
     }
-
-    a.btngo1{
-        letter-spacing:1px;
+    a.btngo1 {
+        letter-spacing: 1px;
         margin-bottom: 100px;
     }
-
-    .modal .closebtn{
+    .modal .closebtn {
         color: #ffffff;
         opacity: 1;
         font-size: 20px;
@@ -91,5 +90,4 @@
         border-radius: 2px;
         font-weight: 100;
     }
-
 }
