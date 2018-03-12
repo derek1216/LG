@@ -1,15 +1,26 @@
 @media (min-width: 770px) {
-
-    .mob_line{
-        display: none  !important;
+    .menu_underline {
+        background-color: #333;
+        height: 1px;
+        width: 0px;
+        position: relative;
+        left: 30px;
+        transition: all 1s cubic-bezier(0.42, 0, 1.0, 1.0);
     }
-    #pf .active{
+
+    .menu_underline:hover {
+        width: 80px;
+    }
+    .mob_line {
+        display: none !important;
+    }
+    #pf .active {
         padding: 50px;
     }
-    .read{
+    .read {
         transform: scale(2);
     }
-    #p9 .icon{
+    #p9 .icon {
         background-image: url(image/three-point-icon.png);
         height: 42px;
         background-position-x: center;

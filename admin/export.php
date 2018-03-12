@@ -1,4 +1,12 @@
 <?php 
+header('Content-type:application/vnd.ms-excel');  //宣告網頁格式
+header('Content-Disposition: attachment; filename=export.xls');  //設定檔案名稱
+
+
+
+?>
+
+<?php 
 $user = $_COOKIE["spec_user"];
 if($user != "lgadmin"){
     header("Location: /admin/index.php");
@@ -35,15 +43,6 @@ $resultfb = mysql_query($query);
 <body style="padding:10px;background-image: url('../image/index/bg.png');">
 
 <div class="">          
-    <div>
-        <p>總註冊人數 : <?php echo mysql_num_rows($result);?></p>
-    </div> 
-    <div>
-        <button type="button" id="export"class="btn btn-info"><a href="export.php">匯出</a></button>
-    </div>
-    <div>
-        <p>總註冊人數(包含完成fb分享) : <?php echo mysql_num_rows($resultfb);?></p>
-    </div> 
   <table class="table table-bordered table-striped">
     <thead>
       <tr>
