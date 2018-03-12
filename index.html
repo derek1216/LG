@@ -7,7 +7,7 @@
     <meta property="og:url" content="http://lg_aitechcare.ptt.com.tw/"></meta>
     <meta property="og:image" content="http://lg_aitechcare.ptt.com.tw/share.png"></meta>
     <meta charset="utf-8">
-
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -87,7 +87,7 @@
                                     <img src="image/index/index-nav-4.png" alt="">
                                 </a>　</li>
                             <li>
-                                <a href="http://www.lg.com/tw/support/contact/telephone" data-ga-category="桌機選單" data-ga-event="聯絡我們">
+                                <a target="_blank" href="http://www.lg.com/tw/support/contact/telephone" data-ga-category="桌機選單" data-ga-event="聯絡我們">
                                     <img src="image/index/index-nav-5.png" alt="">
                                 </a>　</li>
                         </ul>
@@ -260,7 +260,7 @@
                     </div>
                     <div class="f18 fm16 desc fmedium">
                         <div style="">
-                            我們善於處理空間中各種細菌原與髒污，給你清淨好空間，也給你健康好心情
+                            我們善於處理空間中各種細菌源與髒污，給你清淨好空間，也給你健康好心情
                         </div>
                     </div>
                 </div>
@@ -458,8 +458,8 @@
                         </div>
                     </div>
                     <div class="row" class="block_line">
-                            <img src="image/phone/p04/floor-line.png" alt="line" class="mob_line mob_line2">
-                        </div>
+                        <img src="image/phone/p04/floor-line.png" alt="line" class="mob_line mob_line2">
+                    </div>
                     <div class="f18 fm16 fgray desc1">
                         <span class="rightarrow">智慧清潔機器人，讓角落灰塵輕鬆掃除，雙智慧導航偵測、清掃無死角，
                             <br/>隨時隨地
@@ -553,7 +553,9 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/washing-machines/lg-WD-S12GW-TWINWASH" data-ga-category="衣物護理服務" data-ga-event="上下雙能洗淨" class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/washing-machines/lg-WD-S12GV-TWINWASH" data-ga-category="衣物護理服務" data-ga-event="上下雙能洗淨" class="btngo1"
+                                    target="_blank">
+
 
                                 </a>
                             </div>
@@ -637,9 +639,10 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/tvs/lg-OLED55B7T" data-ga-category="健康呵護管理" data-ga-event="多屏監控2" class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/tvs/lg-OLED65E7T" data-ga-category="健康呵護管理" data-ga-event="多屏監控2" class="btngo1" target="_blank">
 
                                 </a>
+
                             </div>
                         </div>
                     </div>
@@ -698,8 +701,7 @@
                     <div class="f24 fm11 desc fdemilight mcus5">
                         <div style="margin-top: 50px;">
                             <div class="fdemilight">現在開始立即填寫資料即可享受我們全新的服務</div>
-                            <div class="fdemilight">你就有機會體驗獲得最具智慧的LG產品</div>
-                            <div class="fdemilight">就用LG智慧科技家電為生活添增精彩吧</div>
+                            <div class="fdemilight">你就有機會獲得最具智慧的LG產品</div>
                         </div>
                     </div>
                     <div>
@@ -1021,33 +1023,29 @@
             var $target = $('html,body');
             var cur_url = window.location.href;
             if (cur_url.indexOf("login") >= 0) {
-                $("#p8").show();
                 $target.animate({ scrollTop: $("#p8").position().top }, 1000);
+            } else {
+                fbapi.preCall(function () {
+                    var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+                    var rootUrl = '';
+                    if (isLocal) {
+                        rootUrl = location.origin + '/';
+                    } else if (location.hostname === '2lg-aitechcare.ptt.com.tw') {
+                        rootUrl = 'http://2lg-aitechcare.ptt.com.tw/';
+                    } else {
+                        rootUrl = 'http://lg-aitechcare.ptt.com.tw/';
+                    }
+
+                    if (fbapi.isLogin) {
+                        $("#p8").show();
+                        $("#p9").hide();
+                    } else {
+                        $("#p9").show();
+                        $("#p8").hide();
+                    }
+
+                });
             }
-
-
-            fbapi.preCall(function () {
-
-                var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-                var rootUrl = '';
-                if (isLocal) {
-                    rootUrl = location.origin + '/';
-                } else if (location.hostname === '2lg-aitechcare.ptt.com.tw') {
-                    rootUrl = 'http://2lg-aitechcare.ptt.com.tw/';
-                } else {
-                    rootUrl = 'http://lg-aitechcare.ptt.com.tw/';
-                }
-
-                if (fbapi.isLogin) {
-                    $("#p9").hide();
-                    $("#p8").show();
-                } else {
-                    $("#p8").hide();
-                    $("#p9").show();
-                }
-
-            });
-
 
             $(".loginfb").click(function () {
                 fbapi.preCall(function () {
@@ -1301,11 +1299,13 @@
             });
 
             $(".service").mouseenter(function () {
+                $("#p0 .videoContainer").css("z-index", "1");
                 $(".servicemenu").addClass("active");
             });
 
             $(".service").mouseleave(function () {
                 $(".servicemenu").removeClass("active");
+                $("#p0 .videoContainer").css("z-index", "0");
             });
         });
 

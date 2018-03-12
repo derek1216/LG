@@ -181,7 +181,6 @@
         width: auto;
         height: auto;
         z-index: -100;
-        opacity: 0.92;
     }
 
     #p0 .logo img{
@@ -927,7 +926,6 @@
         width: auto;
         height: auto;
         z-index: -100;
-        opacity: 0.92;
     }
 
     .btngo1{
@@ -1206,9 +1204,5 @@ a:hover {
 }
 
 #p9 {
-    display: none;
-}
-
-#p8{
     display: none;
 }

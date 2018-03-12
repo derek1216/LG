@@ -5,11 +5,29 @@ if($user != "lgadmin"){
     exit;
 }
 
-$conn = mysql_connect('DB.Server', '2lgaitechcare', 'AiteCH0950');
+$host = $_SERVER['HTTP_REFERER'];
+    if (strpos($host, '2') !== false) {
+        $dbname = "2_lgaitechcare";
+        $dbuser = "2lgaitechcare";
+        $dbpsw ="AiteCH0950";   
+    }else{
+        $dbname = "R_lgaitechcare";
+        $dbuser = "Rlgaitechcare";
+        $dbpsw ="LgAiTe0955";
+    }
+
+#$conn = mysql_connect('DB.Server', '2lgaitechcare', 'AiteCH0950');
+$conn = mysql_connect('DB.Server', $dbuser, $dbpsw);
+
 if (!$conn) {
 　die(' 連線失敗，輸出錯誤訊息 : ' . mysql_error());
 }
-mysql_select_db("2_lgaitechcare",$conn);
+
+
+mysql_select_db($dbname,$conn);
+
+
+
 $query = "select * from lg_reg";
 $result = mysql_query($query);
 
