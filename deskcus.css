@@ -5,10 +5,10 @@
         width: 0px;
         position: relative;
         left: 30px;
-        transition: all 1s cubic-bezier(0.42, 0, 1.0, 1.0);
+        transition: all 0.3s cubic-bezier(0.42, 0, 1.0, 1.0);
     }
 
-    .menu_underline:hover {
+    .menu_underline.active {
         width: 80px;
     }
     .mob_line {

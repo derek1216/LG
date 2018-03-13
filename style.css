@@ -1150,36 +1150,7 @@ a:hover {
     src: url(font/NotoSansCJKtc-Thin.otf);
 } */
 
-@font-face {
-    font-family: 'Noto Sans TC';
-    font-style: normal;
-    font-weight: 400;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
-         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
-         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
-  }
 
-  @font-face {
-    font-family: 'Noto Sans TC Medium';
-    font-style: normal;
-    font-weight: 500;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
-         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
-         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
-  }
-
-  @font-face {
-    font-family: 'Noto Sans TC Light';
-    font-style: normal;
-    font-weight: 300;
-    src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
-         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
-         url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
-  }
-
-* {
-    font-family: 'eng','Noto Sans TC','Roboto', 'Segoe UI', 'Segoe UI Light', 'Myriad Set Pro', NotoSansHant, 'Microsoft JhengHei', 微軟正黑體, 'Heiti TC', 'Microsoft YaHei', 微軟雅黑體, simhei, PMingLiU, 新細明體, Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, 'ＭＳ Ｐゴシック', 'Malgun Gothic', Dotum, Gulim, 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, sans-serif;    
-}
 
 
  .fmedium{

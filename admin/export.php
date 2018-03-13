@@ -5,7 +5,6 @@ header('Content-Disposition: attachment; filename=export.xls');  //設定檔案�
 
 
 ?>
-
 <?php 
 $user = $_COOKIE["spec_user"];
 if($user != "lgadmin"){
@@ -13,12 +12,30 @@ if($user != "lgadmin"){
     exit;
 }
 
-$conn = mysql_connect('DB.Server', '2lgaitechcare', 'AiteCH0950');
+$host = $_SERVER['HTTP_REFERER'];
+    if (strpos($host, '2') !== false) {
+        $dbname = "2_lgaitechcare";
+        $dbuser = "2lgaitechcare";
+        $dbpsw ="AiteCH0950";   
+    }else{
+        $dbname = "R_lgaitechcare";
+        $dbuser = "Rlgaitechcare";
+        $dbpsw ="LgAiTe0955";
+    }
+
+#$conn = mysql_connect('DB.Server', '2lgaitechcare', 'AiteCH0950');
+$conn = mysql_connect('DB.Server', $dbuser, $dbpsw);
+
 if (!$conn) {
 　die(' 連線失敗，輸出錯誤訊息 : ' . mysql_error());
 }
-mysql_select_db("2_lgaitechcare",$conn);
-$query = "select * from lg_reg";
+
+
+mysql_select_db($dbname,$conn);
+
+
+
+$query = "select * from lg_reg where fb_id !=''";
 $result = mysql_query($query);
 
 $query = "select * from lg_reg where fb_id !=''";
@@ -67,12 +84,12 @@ $resultfb = mysql_query($query);
             echo "<td>".$row['id']."</td>";
             echo "<td>".$row['name']."</td>";
             echo "<td>".$row['email']."</td>";
-            echo "<td>".$row['phone']."</td>";
+            echo "<td>> ".$row['phone']."</td>";
             echo "<td>".$row['city']."</td>";
             echo "<td>".$row['district']."</td>";
             echo "<td>".$row['address']."</td>";
             echo "<td>".$row['create_date']."</td>";
-            echo "<td>".$row['fb_id']."</td>";
+            echo "<td>> ".$row['fb_id']."</td>";
             echo "<td>".$row['fb_name']."</td>";
             echo "<td>".$row['fb_update_date']."</td>";
             echo "</tr>";

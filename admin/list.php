@@ -57,7 +57,7 @@ $resultfb = mysql_query($query);
         <p>總註冊人數 : <?php echo mysql_num_rows($result);?></p>
     </div> 
     <div>
-        <button type="button" id="export"class="btn btn-info"><a href="export.php">匯出</a></button>
+        <button type="button" id="export"class="btn btn-info"><a style="color: #fff;" href="export.php">匯出</a></button>
     </div>
     <div>
         <p>總註冊人數(包含完成fb分享) : <?php echo mysql_num_rows($resultfb);?></p>
