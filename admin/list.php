@@ -26,12 +26,20 @@ if (!$conn) {
 
 mysql_select_db($dbname,$conn);
 
+$date = $_POST['date'];
+
+if($date!=""){
+    $wstr = "WHERE `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
+    $wstr2 = "and `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
+}
 
 
-$query = "select * from lg_reg";
+
+$query = "select * from lg_reg $wstr union select * from lg_reg0314 $wstr order by create_date ";
 $result = mysql_query($query);
 
-$query = "select * from lg_reg where fb_id !=''";
+
+$query = "select * from lg_reg where fb_id !='' $wstr2 union select * from lg_reg0314 where fb_id !='' $wstr2 ";
 $resultfb = mysql_query($query);
 
 ?>
@@ -51,57 +59,62 @@ $resultfb = mysql_query($query);
   </style>
 </head>
 <body style="padding:10px;background-image: url('../image/index/bg.png');">
-
-<div class="">          
-    <div>
-        <p>總註冊人數 : <?php echo mysql_num_rows($result);?></p>
-    </div> 
-    <div>
-        <button type="button" id="export"class="btn btn-info"><a style="color: #fff;" href="export.php">匯出</a></button>
+<div class="container-fluid">
+        <div class="">           
+            <div>
+                <p>總註冊人數 : <?php echo mysql_num_rows($result);?></p>
+            </div> 
+            <div>
+            <a style="color: #fff;" href="export.php?date=<?php echo $date;?>"><button type="button" id="export"class="btn btn-info">匯出當前資料</button></a>
+            </div>
+            <div>
+                <p>總註冊人數(包含完成fb分享) : <?php echo mysql_num_rows($resultfb);?></p>
+            </div> 
+            <div>
+                 <form action="list.php" method="post">
+                依日期搜尋，如2018-03-14: <input type="text" name="date" id="date" class="date"><input type="submit" value="送出">
+                </form>
+            </div>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>編號</th>
+                <th>姓名</th>
+                <th>信箱</th>
+                <th>手機</th>
+                <th>縣市</th>
+                <th>區域</th>
+                <th>住址</th>
+                <th>新增時間</th>
+                <th>臉書ID</th>
+                <th>臉書姓名</th>
+                <th>臉書更新時間</th>
+            </tr>
+            </thead>
+            <tbody>
+                <?php
+                
+                while ($row = mysql_fetch_assoc($result)) {
+                    echo "<tr>";
+                    echo "<td>".$row['id']."</td>";
+                    echo "<td>".$row['name']."</td>";
+                    echo "<td>".$row['email']."</td>";
+                    echo "<td>".$row['phone']."</td>";
+                    echo "<td>".$row['city']."</td>";
+                    echo "<td>".$row['district']."</td>";
+                    echo "<td>".$row['address']."</td>";
+                    echo "<td>".$row['create_date']."</td>";
+                    echo "<td>".$row['fb_id']."</td>";
+                    echo "<td>".$row['fb_name']."</td>";
+                    echo "<td>".$row['fb_update_date']."</td>";
+                    echo "</tr>";
+                }
+                
+                ?>
+            </tbody>
+        </table>
+        </div>
     </div>
-    <div>
-        <p>總註冊人數(包含完成fb分享) : <?php echo mysql_num_rows($resultfb);?></p>
-    </div> 
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th>編號</th>
-        <th>姓名</th>
-        <th>信箱</th>
-        <th>手機</th>
-        <th>縣市</th>
-        <th>區域</th>
-        <th>住址</th>
-        <th>新增時間</th>
-        <th>臉書ID</th>
-        <th>臉書姓名</th>
-        <th>臉書更新時間</th>
-      </tr>
-    </thead>
-    <tbody>
-        <?php
-        
-        while ($row = mysql_fetch_assoc($result)) {
-            echo "<tr>";
-            echo "<td>".$row['id']."</td>";
-            echo "<td>".$row['name']."</td>";
-            echo "<td>".$row['email']."</td>";
-            echo "<td>".$row['phone']."</td>";
-            echo "<td>".$row['city']."</td>";
-            echo "<td>".$row['district']."</td>";
-            echo "<td>".$row['address']."</td>";
-            echo "<td>".$row['create_date']."</td>";
-            echo "<td>".$row['fb_id']."</td>";
-            echo "<td>".$row['fb_name']."</td>";
-            echo "<td>".$row['fb_update_date']."</td>";
-            echo "</tr>";
-        }
-        
-        ?>
-    </tbody>
-  </table>
-</div>
-
 </body>
 </html>
 

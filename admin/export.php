@@ -33,13 +33,18 @@ if (!$conn) {
 
 mysql_select_db($dbname,$conn);
 
+$date = $_GET['date'];
 
+if($date!=""){
+    $wstr = "WHERE `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
+    $wstr2 = "and `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
+}
 
-$query = "select * from lg_reg where fb_id !=''";
+$query = "select * from lg_reg $wstr union select * from lg_reg0314 $wstr order by create_date ";
 $result = mysql_query($query);
 
-$query = "select * from lg_reg where fb_id !=''";
-$resultfb = mysql_query($query);
+
+
 
 ?>
 

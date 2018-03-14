@@ -12,7 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=zh-TW&onload=onloadCallback&render=explicit" async defer></script>
+        
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobi_cus.css">
     <link rel="stylesheet" href="deskcus.css">
@@ -759,13 +760,14 @@
                                         <span class="fred ga" data-ga-category="按鈕_中獎服務_隱私權條約" data-ga-event="按鈕_中獎服務_隱私權條約" data-toggle="modal" data-target="#myModal4" style="cursor:pointer;text-decoration: underline;">隱私權條約</span> 同意主辦單位運用此聯絡資訊進行贈獎事宜聯繫</span>
                                 </p>
                             </div>
+                            <div class="row"> <div id="my-widget" class="mx-auto d-block"style="text-align: center;position: relative;margin-bottom: 50px;"></div></div>
                             <div>
                                 <p id="submit" data-ga-category="按鈕_中獎服務_填寫資料_確定" data-ga-event="按鈕_中獎服務_填寫資料_確定" data-toggle="modal" data-target="#myModal1" class="ga f18 fm24 fwhite desc mx-auto d-block text-center" style="background-color: #b7004a;padding: 3px;cursor: pointer;">
                                     <span style="">確定</span>
                                 </p>
                             </div>
-                            <div class="g-recaptcha" data-sitekey="6LcWk0wUAAAAADSbEA_9o0ize7PeRJP9aH3LdBB6"></div>
-                      </form>
+                           
+
                         <div class="topbtn golink" data-go="#p0">
                             <img src="/image/index/top-button.png">
                         </div>
@@ -830,6 +832,7 @@
                     <div class="f12 fm9 desc1" style="font-family: 微軟正黑體;">
 
                         Copyright © 2009-2018 LG Electronics. All Rights Reserved
+                        <input type="hidden" name="google" id="google" value="">
                     </div>
                 </div>
             </div>
@@ -1025,9 +1028,26 @@
 
 
     <script>
+    var verifyCallback = function(response) {
+        // 如果 JavaScript 驗證成功
+        if (response) {
+            $.post('captcha.php', { 'g-recaptcha-response': response }, function(data, status) {
+                // 如果 PHP 驗證成功
+                if (status == 'success')$("#google").val(data);
+            });
+        }
+    };
 
+    var onloadCallback = function() {
+        grecaptcha.render(
+            'my-widget', {                              // widget 驗證碼視窗在 id="my-widget" 顯示
+                'sitekey' : '6LcWk0wUAAAAADSbEA_9o0ize7PeRJP9aH3LdBB6',  // API Key
+                'callback' : verifyCallback            // 主題
+            }
+        );
+    };
         $(function () {
-
+            $("#google").val("");
             $(".deskmenu a").mouseenter(function () {
                 $(".menu_underline", this).addClass("active");
             });
@@ -1127,6 +1147,11 @@
 
             var userid = "";
             $("#submit").click(function () {
+                if($("#google").val()==""){
+                    alert("請勾選我不是機器人");
+                    return false;
+                }
+
                 if ($(".name").val() == "") {
                     alert("請填入姓名喔");
                     return false;
@@ -1172,6 +1197,7 @@
                     addr1: $(".addr1 option:selected").text(),
                     addr2: $(".addr2 option:selected").text(),
                     addr3: $(".addr3").val(),
+                    google:$("#google").val(),
                     type: 'new'
                 }).done(function (data) {
                     userid = data;
@@ -1179,6 +1205,7 @@
                         id: userid,
                         name: $(".name").val()
                     });
+                    $("#google").val("");
                 });
             });
 
