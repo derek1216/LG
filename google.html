@@ -1,0 +1,170 @@
+<p>
+        <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+        </p>
+        <div class="row loader_download" style="display: none; height: 100%; position: absolute; width: 100%; opacity: 0.8; z-index: 9999; background-repeat: no-repeat; background-position: 50% center; background-image: url('ext_images/global_en/loading_white3.gif'); background-color: #fff;"><span class="closeicon" style="float: right; border: 2px solid #ddd; padding: 5px; background-color: #2292d3; color: #333; cursor: pointer;">X</span></div>
+        <style><!--
+        @import url(//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css);
+        --></style>
+        <p>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        </p>
+        <form id="formexport" method="post" action="http://webcms.aten.com/ext_libraries/atenproducts_export.php">
+        <div class="row" style="margin-top: 30px;">
+        <div class="col-md-12" style="margin-top: 20px;">
+        <table>
+        <tbody>
+        <tr>
+        <td>Language:</td>
+        <td><select name="lang" id="lang">
+        <option value="global/en" selected="selected" id="global/en">English (Global)</option>
+        <option value="us/en">English (US/Canada)</option>
+        <option value="la/es">Espa&ntilde;ol (Latam)</option>
+        <option value="la/pt">Portugu&ecirc;s (Latam)</option>
+        <option value="cn/zh">中文 (简体)</option>
+        <option value="tw/zh">中文 (繁體)</option>
+        <option value="jp/ja">日本語</option>
+        <option value="kr/ko">한국어</option>
+        <option value="gb/en">English (UK)</option>
+        <option value="eu/en">English (EU)</option>
+        <option value="de/de">Deutsch</option>
+        <option value="es/es">Espa&ntilde;ol (ES)</option>
+        <option value="pl/pl">Polski</option>
+        <option value="pt/pt">Portugu&ecirc;s (PT)</option>
+        <option value="ru/ru">Pусский</option>
+        <option value="it/it">Italiano</option>
+        <option value="fr/fr">Fran&ccedil;ais</option>
+        <option value="au/en">English (ANZ)</option>
+        </select></td>
+        </tr>
+        <tr>
+        <td>Specified Model:</td>
+        <td><input id="prdall" name="prdall" class="raido" checked="checked" type="radio" /> <label for="prdall">All Products</label> <input id="products" name="prdall" class="raido" type="radio" /> <label for="products">Pick Models</label></td>
+        </tr>
+        <tr style="display: none;" class="pickprd">
+        <td></td>
+        <td><input placeholder="Please Pick Models" class="models" style="width: 500px;" id="models" type="text" /></td>
+        </tr>
+        <tr>
+        <td>Password:</td>
+        <td><input style="width: 500px;" id="pwd" name="pwd" type="password" /></td>
+        </tr>
+        <tr>
+        <td>Your Email:</td>
+        <td><input style="width: 500px;" id="email" name="email" type="text" /></td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        <div class="g-recaptcha" data-sitekey="6LdONjsUAAAAANSoFp4VgbOm0ef6_B5xPWZ_lMGs"></div>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <br /> <input id="prds" name="prds" type="hidden" /></div>
+        </div>
+        <div class="row submitsection" style="margin-top: 30px; text-align: center;"><a href="#" id="export" class="btn btn-primary" style="margin-top: 40px; margin-bottom: 50px;">Export</a></div>
+        </form>
+        <p>
+        <script>// <![CDATA[
+        $(function () {
+                        $("#export").click(function () {
+                            $(".loader_download").show();
+                            $("#formexport").submit();
+                            return false;
+                        });
+                
+                        $(".raido").click(function () {
+                            var target = $(this).attr("id");
+                            if (target == "prdall") {
+                                $(".pickprd").hide();
+                                $("#prds").val("");
+                                $("#models").val("");
+                            } else {
+                                $(".pickprd").show();
+                            }
+                        });
+                
+                        $(".closeicon").click(function () {
+                            $(".loader_download").hide();
+                        });
+                
+                        $.ajax({
+                            url: "/ext_libraries/getFuncs.php?funName=get_productlistForDorpdownmenu",
+                            dataType: 'json',
+                            'success': function (data) {
+                                bindAutocomplate(data);
+                
+                            }
+                        });
+            
+                        $.ajax({
+                            url: "/ext_libraries/ipfilter.php",
+                            'success': function (data) {
+                                if(data!=""){
+            var msg = "<div>Your IP Address "+data+" is not permitted to access the ATEN data export center! <br/>Please contact your <a href='/contact-us/office-locations/' target='_blank'>ATEN local distributor</a> to apply a personal account.</div>";
+                                    $("#formexport").html(msg);
+                                }
+                            }
+                        });
+                
+                        $("#prdall").click(function () {
+                
+                        });
+                
+                
+                        function split(val) {
+                            return val.split(/,\s*/);
+                        }
+                        function extractLast(term) {
+                            return split(term).pop();
+                        }
+                
+                        $.ui.autocomplete.filter = function (array, term) {
+                            var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+                            return $.grep(array, function (value) {
+                                return matcher.test(value.label || value.value || value);
+                            });
+                        };
+                
+                        //bindAutocomplate(availableTags);
+                        function bindAutocomplate(source) {
+                            $("#models")
+                                // don't navigate away from the field on tab when selecting an item
+                                .on("keydown", function (event) {
+                                    if (event.keyCode === $.ui.keyCode.TAB &&
+                                        $(this).autocomplete("instance").menu.active) {
+                                        event.preventDefault();
+                                    }
+                                })
+                                .autocomplete({
+                                    minLength: 0,
+                                    source: function (request, response) {
+                                        // delegate back to autocomplete, but extract the last term
+                                        response($.ui.autocomplete.filter(
+                                            source, extractLast(request.term)));
+                                    },
+                                    focus: function () {
+                                        // prevent value inserted on focus
+                                        return false;
+                                    },
+                                    select: function (event, ui) {
+                                        source = jQuery.grep(source, function (element) {
+                                            return element != ui.item.value;
+                                        });
+                
+                                        var terms = split(this.value);
+                                        // remove the current input
+                                        terms.pop();
+                                        // add the selected item
+                                        terms.push("'" + ui.item.value + "'");
+                                        // add placeholder to get the comma-and-space at the end
+                                        terms.push("");
+                                        this.value = terms.join(",");
+                                        $("#prds").val(this.value);
+                                        return false;
+                                    }
+                                });
+                        }
+                
+                    });
+        // ]]></script>
+        </p>

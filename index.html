@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobi_cus.css">
     <link rel="stylesheet" href="deskcus.css">
@@ -735,34 +735,37 @@
                         </p>
                     </div>
                     <div class="a2 animation f22 fm20">
-                        <div>
-                            <input type="text" name="name" class="name" placeholder="*請填寫真實姓名">
-                        </div>
-                        <div>
-                            <input type="text" name="email" class="email" placeholder="*電子信箱">
-                        </div>
-                        <div>
-                            <input type="text" name="phonenumb" class="phonenumb" placeholder="*10碼手機號碼">
-                        </div>
-                        <div>
-                            <input id="address" class="twaddress" />
-                        </div>
-                        <div>
-                            <input type="text" name="addr3" class="addr3" placeholder="*地址">
-                        </div>
-                        <div>
-                            <p class="f18 fm11 fgray desc1">
-                                <input type="checkbox" name="read" class="read" style="margin-right: 20px;width:20px;cursor: pointer;">
-                                <span style="">我已讀過
-                                    <span class="fred ga" data-ga-category="按鈕_中獎服務_活動辦法" data-ga-event="按鈕_中獎服務_活動辦法" data-toggle="modal" data-target="#myModal3" style="cursor:pointer;text-decoration: underline;">活動辦法</span>，並同意
-                                    <span class="fred ga" data-ga-category="按鈕_中獎服務_隱私權條約" data-ga-event="按鈕_中獎服務_隱私權條約" data-toggle="modal" data-target="#myModal4" style="cursor:pointer;text-decoration: underline;">隱私權條約</span> 同意主辦單位運用此聯絡資訊進行贈獎事宜聯繫</span>
-                            </p>
-                        </div>
-                        <div>
-                            <p id="submit" data-ga-category="按鈕_中獎服務_填寫資料_確定" data-ga-event="按鈕_中獎服務_填寫資料_確定" data-toggle="modal" data-target="#myModal1" class="ga f18 fm24 fwhite desc mx-auto d-block text-center" style="background-color: #b7004a;padding: 3px;cursor: pointer;">
-                                <span style="">確定</span>
-                            </p>
-                        </div>
+                        <form>
+                            <div>
+                                <input type="text" name="name" class="name" placeholder="*請填寫真實姓名">
+                            </div>
+                            <div>
+                                <input type="text" name="email" class="email" placeholder="*電子信箱">
+                            </div>
+                            <div>
+                                <input type="text" name="phonenumb" class="phonenumb" placeholder="*10碼手機號碼">
+                            </div>
+                            <div>
+                                <input id="address" class="twaddress" />
+                            </div>
+                            <div>
+                                <input type="text" name="addr3" class="addr3" placeholder="*地址">
+                            </div>
+                            <div>
+                                <p class="f18 fm11 fgray desc1">
+                                    <input type="checkbox" name="read" class="read" style="margin-right: 20px;width:20px;cursor: pointer;">
+                                    <span style="">我已讀過
+                                        <span class="fred ga" data-ga-category="按鈕_中獎服務_活動辦法" data-ga-event="按鈕_中獎服務_活動辦法" data-toggle="modal" data-target="#myModal3" style="cursor:pointer;text-decoration: underline;">活動辦法</span>，並同意
+                                        <span class="fred ga" data-ga-category="按鈕_中獎服務_隱私權條約" data-ga-event="按鈕_中獎服務_隱私權條約" data-toggle="modal" data-target="#myModal4" style="cursor:pointer;text-decoration: underline;">隱私權條約</span> 同意主辦單位運用此聯絡資訊進行贈獎事宜聯繫</span>
+                                </p>
+                            </div>
+                            <div>
+                                <p id="submit" data-ga-category="按鈕_中獎服務_填寫資料_確定" data-ga-event="按鈕_中獎服務_填寫資料_確定" data-toggle="modal" data-target="#myModal1" class="ga f18 fm24 fwhite desc mx-auto d-block text-center" style="background-color: #b7004a;padding: 3px;cursor: pointer;">
+                                    <span style="">確定</span>
+                                </p>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LcWk0wUAAAAADSbEA_9o0ize7PeRJP9aH3LdBB6"></div>
+                      </form>
                         <div class="topbtn golink" data-go="#p0">
                             <img src="/image/index/top-button.png">
                         </div>
