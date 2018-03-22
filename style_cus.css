@@ -1,0 +1,234 @@
+
+@media (max-width: 769px) { 
+    .fm16{
+        font-size: 16pt;
+    }
+    .modal4 .close,.modal3 .close{
+        position: absolute;
+        transform: scale(0.6);
+        right: 40px;
+        top: 80px;
+        z-index: 999;
+    }
+
+    #p5 .imgright{
+        width:100vh;
+    }
+
+    .modal2 .underline{
+        margin: 20px 0;
+        display: block;
+    }
+
+    #p2 .icon {
+        height: 40px;
+        width: 42px;
+    }
+    #p21 .title span{
+        padding: 0 10px 5px 15px;
+    }
+
+    #p21 .a2{
+        margin-top: 100px;
+    }
+
+    #p21 .a2 img,#p92 .a2 img{
+        width:100%;
+    }
+
+    #p22 .arrow{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #p92 .btngo1.lgaddress{
+        background-image: url(/image/phone/p09/button-go.png);
+    }
+
+    #p92 .a2{
+        margin: 40px 0;
+    }
+
+    #p92 a.btngo1 {
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+    
+    #p92 .topbtn{
+        position: absolute;
+        z-index: 999;
+        right: 10px;
+        display: block;
+        margin-top: -30px;
+    }
+
+    img.wifi {
+        position: relative;
+        top: -3px;
+        margin: 0 5px 0 0;
+    }
+
+    a.btngo1:active {
+        background-color: transparent;
+    }
+
+    a.btngo1 {
+        padding: 0px 79px;
+        height: 43px;
+ }
+
+ #p22 .blacklink{
+    margin-top: 30px;
+    }
+
+    #menu div.sub.active {
+        max-height: 260px;
+    }
+
+    #p21 .arrow{
+        margin-top: 100px;
+    }
+
+    #p7 .dotimg{
+        display: none;
+    }
+}
+
+
+ @media (min-width: 770px)  { 
+     section#p6{
+        background-image:none;
+     }
+
+     #p8 input{
+        text-align: center;
+     }
+
+     #p8 input:focus, #p8 select:focus {
+        outline: none;
+    }
+
+     #p7 .dotimg{
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        margin-top: -145px;
+     }
+
+    div.colorline6 {
+        top: 200px;
+    }
+
+    #p6 .a4 div.desc1 {
+        padding-right: 70px;
+    }
+
+    #p3 div.r5 {
+        padding-left: 0px;
+    }
+
+    #p4 .a3 div.desc1{
+        padding-right: 0px;
+    }
+    .servicemenu .menu_underline.active{
+        width: 116px;
+        left: 5px;
+    }
+
+    #p3 div.content3{
+        margin-top: 0;
+    }
+
+    #p6 > .line5{
+        right: 151px;
+        position: absolute;
+        z-index: 999;
+        margin-top: -148px;
+    }
+
+    #p8 p.desc {
+        width: 550px;
+        padding: 7px;
+    }
+
+    section .bg > div.fwhite {
+        background-image: url(/image/index/guide-line.png);
+    }
+
+    div.overview {
+        height: 500px;
+    }
+
+    #p7 div.desc2 {
+        margin-bottom: 150px;
+    }
+
+     .f40{
+         font-size: 40pt;
+     }
+
+    #p2 span.rarrow {
+        padding-right: 5px;
+    }
+
+    #p2 span.larrow {
+        padding-left: 5px;
+    }
+
+    img.wifi {
+        position: relative;
+        top: -3px;
+        margin: 0 5px 0 0;
+    }
+
+    #p0 .menu_underline {
+        background-color: #fff;
+    }
+
+    #p21 .title span{
+        padding: 0 100px;
+    }
+    
+    #p21 .arrow,#p22 .arrow,#p92 .arrow{
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+
+    #p21 .a2{
+        margin-top: 100px;
+    }
+
+    #p22{
+        background-image: url(image/p2-1/guide-line.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 120px;
+    }
+
+    #p22 .blacklink{
+        display: none;
+        }
+
+    section#p3 .bg {
+        margin-top: 0px;
+    }
+
+    #p92 .btngo1.lgaddress{
+        background-image: url(/image/p09/button-go.png);
+    }
+
+    #p92 .a2{
+        margin: 60px 0;
+    }
+
+    #p92 .topbtn {
+        float: right;
+        position: relative;
+        top: -25px;
+        cursor: pointer;
+    }
+ }
+
+ body{
+    line-height: 1.8;
+ }

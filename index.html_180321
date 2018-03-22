@@ -12,11 +12,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=zh-TW&onload=onloadCallback&render=explicit"
-        async defer></script>
-
+        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=zh-TW&onload=onloadCallback&render=explicit" async defer></script>
+        
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_cus.css">
     <link rel="stylesheet" href="mobi_cus.css">
     <link rel="stylesheet" href="deskcus.css">
     <link rel="stylesheet" href="innerborder.css">
@@ -31,8 +29,7 @@
 
             <div class="videoContainer row">
                 <div class="menuicon">
-                    <a data-toggle="modal" data-target="#menu" data-ga-category="按鈕_MEＮU" data-ga-event="按鈕_MEＮU" style="width: 100%; display: block;">
-                        &nbsp;</a>
+                    <a data-toggle="modal" data-target="#menu"  data-ga-category="按鈕_MEＮU" data-ga-event="按鈕_MEＮU" style="width: 100%; display: block;"> &nbsp;</a>
                 </div>
                 <div class="content">
                     <div class="row logo" style="">
@@ -66,12 +63,6 @@
                                     <div class="menu_underline"></div>
                                 </a>
                             </li>
-                            <li>
-                                    <a data-ga-category="按鈕_MEＮU_公司組織" data-ga-event="按鈕_MEＮU_公司組織" href="#" class="golink" data-go="#p21">
-                                        <img src="image/index/index-meau.png" alt="">
-                                        <div class="menu_underline"></div>
-                                    </a>
-                                </li>
                             <li class="service">
                                 <a href="#" data-ga-category="按鈕_MEＮU_服務項目" data-ga-event="按鈕_MEＮU_服務項目">
                                     <img src="image/index/index-nav-2.png" alt="">
@@ -80,15 +71,12 @@
                                 <ul class="servicemenu">
                                     <li class="golink" data-go="#p3" data-ga-category="按鈕_MEＮU_健康呵護管理" data-ga-event="按鈕_MEＮU_健康呵護管理">
                                         <img src="image/index/index-nav-01.png" alt="">
-                                        <div class="menu_underline"></div>
                                     </li>
                                     <li class="golink" data-go="#p4" data-ga-category="按鈕_MEＮU_地板清潔服務" data-ga-event="按鈕_MEＮU_地板清潔服務">
                                         <img src="image/index/index-nav-02.png" alt="">
-                                        <div class="menu_underline"></div>
                                     </li>
                                     <li class="golink" data-go="#p5" data-ga-category="按鈕_MEＮU_衣物護理服務" data-ga-event="按鈕_MEＮU_衣物護理服務">
                                         <img src="image/index/index-nav-03.png" alt="">
-                                        <div class="menu_underline"></div>
                                     </li>
                                 </ul>
                             </li>
@@ -120,8 +108,7 @@
         <section id="p1" class="noanimation">
 
             <div class="menuicon" style="background-position-y: bottom;">
-                <a data-toggle="modal" data-ga-category="按鈕_MEＮU" data-ga-event="按鈕_MEＮU" data-target="#menu" style="width: 100%; display: block;">
-                    &nbsp;</a>
+                <a data-toggle="modal" data-ga-category="按鈕_MEＮU" data-ga-event="按鈕_MEＮU" data-target="#menu" style="width: 100%; display: block;"> &nbsp;</a>
             </div>
             <div class="row bg" style="">
                 <div class="block_line z100">
@@ -136,7 +123,7 @@
                     </div>
                     <div>
                         <p class="f36 fm24 title">
-                            <span style="border-bottom: 1px solid;">公司理念</span>
+                            <span style="border-bottom: 1px solid;">我們的理念</span>
                         </p>
                     </div>
                     <div class="f19 fm12 content">
@@ -155,13 +142,13 @@
         <section id="p2">
 
             <div class="row">
-                <div class="col-md-12 text-center fred">
+                <div class="col-md-12 text-center fred nextline">
                     <div class="arrow a1 animation">
                         <img src="image/p02/p02-arrow.png" alt="icon">
                     </div>
                     <div class="a1 animation">
                         <p class="f42 fm22 title fmedium">
-                            <span style="border-bottom: 1px solid #b7004a;">公司兩大特色</span>
+                            <span style="border-bottom: 1px solid #b7004a;">兩大特色</span>
                         </p>
                     </div>
 
@@ -202,7 +189,7 @@
                                     background-size: contain;">
                                         <div class="content2 fm24 fmedium">
                                             <div class="row">
-                                                <img class="order-md-1 order-2 icon" style="margin-top: 10px;" src="image/p02/p02-icon-hourglass.png" alt="">
+                                                <img class="order-md-1 order-2 icon" src="image/p02/p02-icon-hourglass.png" alt="">
                                                 <span class="order-md-2 order-1" style="border-bottom: 0px solid #b7004a;padding-bottom: 0px;">無虛耗時</span>
                                             </div>
                                         </div>
@@ -235,7 +222,7 @@
                             <div class="f20 fm14 fgray desc">
                                 <span>
                                     <span class="f18 fm16 rarrow">
-                                            <img class="wifi" src="/image/p01/arrow-icon.png" alt=""></span>專業智能科技 ，居家管理不落人後</span>
+                                        <</span>專業智能科技 ，居家管理不落人後</span>
                             </div>
                         </div>
                     </div>
@@ -253,7 +240,7 @@
                             </div>
                             <div class="f20 fgray fm14">
                                 <span>24小時全天服務，高效為你管理生活
-                                    <span class="f18 fm16 larrow"> <img class="wifi" src="/image/p01/arrow-icon.png" alt=""></span>
+                                    <span class="f18 fm16 larrow">></span>
                                 </span>
                             </div>
                         </div>
@@ -263,43 +250,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="p21">
-            <div class="row">
-                <div class="col-md-12 text-center fred">
-                    <div class="arrow a1 animation">
-                        <img src="image/p02/p02-arrow.png" alt="icon">
-                    </div>
-                    <div class="a1 animation">
-                        <p class="f42 fm22 title fmedium">
-                            <span style="border-bottom: 1px solid #b7004a;">公司組織</span>
-                        </p>
-                    </div>
-                    <div class="a2 animation">
-                        <img class="navhidesm" src="image/p2-1/P2-1.png" alt="" style="width:100%;">
-                        <img class="hidemd" src="image/phone/p2-1/P2-1.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="p22">
-            <div class="row">
-                <div class="col-md-12 text-center fred">
-                    <div class="arrow a1 animation">
-                        <img src="image/p02/p02-arrow.png" alt="icon">
-                    </div>
-                    <div class="a1 animation">
-                        <p class="f42 fm22 title fmedium">
-                            <span style="border-bottom: 1px solid #b7004a;">我們的服務</span>
-                        </p>
-                    </div>
-                    <div class="blacklink">
-                            <img src="image/p2-1/guide-line.png" alt="">
-                                        </div>
-                </div>
-            </div>
-
         </section>
         <section id="p3">
 
@@ -355,7 +305,7 @@
                 </div>
             </div>
             <div class="row r3 animation a3">
-                <div class="offset-md-1  col-md-6 f30 fm24 text-md-left text-center order-md-1 order-2">
+                <div class="col-md-7 f30 fm24 text-md-left text-center order-md-1 order-2">
                     <div class="content3 fred row">
                         <div class="order-md-1 order-2">
                             <span>居家濕度調控</span>
@@ -371,8 +321,8 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/small-appliances/lg-RD171QSC1" data-ga-category="按鈕_健康呵護管理_居家濕度調控_了解更多" data-ga-event="按鈕_健康呵護管理_居家濕度調控_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/small-appliances/lg-RD171QSC1" data-ga-category="按鈕_健康呵護管理_居家濕度調控_了解更多" data-ga-event="按鈕_健康呵護管理_居家濕度調控_了解更多" class="btngo1"
+                                    target="_blank">
 
                                 </a>
                             </div>
@@ -407,8 +357,7 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/air-conditioners" data-ga-category="按鈕_健康呵護管理_雙迴旋變頻 空氣調節_了解更多" data-ga-event="按鈕_健康呵護管理_雙迴旋變頻 空氣調節_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/air-conditioners" data-ga-category="按鈕_健康呵護管理_雙迴旋變頻 空氣調節_了解更多" data-ga-event="按鈕_健康呵護管理_雙迴旋變頻 空氣調節_了解更多" class="btngo1" target="_blank">
 
                                 </a>
                             </div>
@@ -417,7 +366,7 @@
                 </div>
             </div>
             <div class="row r5 animation a3">
-                <div class="col-md-5 offset-md-1 f30 fm24 text-md-left text-center order-md-1 order-2">
+                <div class="col-md-5 f30 fm24 text-md-left text-center order-md-1 order-2">
                     <div class="content3 fred row">
                         <div class="order-md-1 order-2">
                             <span>門中門 魔術空間</span>
@@ -434,8 +383,8 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/refrigerators/lg-GR-DPL80N" data-ga-category="按鈕_健康呵護管理_門中門 魔術空間_了解更多" data-ga-event="按鈕_健康呵護管理_門中門 魔術空間_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/refrigerators/lg-GR-DPL80N" data-ga-category="按鈕_健康呵護管理_門中門 魔術空間_了解更多" data-ga-event="按鈕_健康呵護管理_門中門 魔術空間_了解更多" class="btngo1"
+                                    target="_blank">
 
                                 </a>
                             </div>
@@ -443,7 +392,7 @@
                     </div>
                     <div class="colorline-red colorline2"></div>
                 </div>
-                <div class="col-md-6 col-sm-12 order-md-2 order-1 innerborder">
+                <div class="col-md-7 col-sm-12 order-md-2 order-1 innerborder">
                     <img class="service_img navhidesm" src="image/p03/p03-png-04.png" alt="">
                     <img class="service_img hidemd" src="image/phone/p03/air-png-04.png" alt="">
                 </div>
@@ -495,8 +444,7 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/vacuum-cleaner" data-ga-category="按鈕_地板清潔服務_吸力強勁 誰敢較勁_了解更多" data-ga-event="按鈕_地板清潔服務_吸力強勁 誰敢較勁_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/vacuum-cleaner" data-ga-category="按鈕_地板清潔服務_吸力強勁 誰敢較勁_了解更多" data-ga-event="按鈕_地板清潔服務_吸力強勁 誰敢較勁_了解更多" class="btngo1" target="_blank">
 
                                 </a>
                             </div>
@@ -505,7 +453,7 @@
                 </div>
             </div>
             <div class="row r2 animation a3">
-                <div class="offset-md-1 col-md-6 f30 fm24 text-md-left text-center order-md-1 order-2">
+                <div class="col-md-8 f30 fm24 text-md-left text-center order-md-1 order-2">
                     <div class="content2 fred row ">
                         <div class="order-md-1 order-2">
                             <span>智慧清潔機器人</span>
@@ -525,8 +473,7 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/robot-vacuums" data-ga-category="按鈕_地板清潔服務_智慧清潔機器人_了解更多" data-ga-event="按鈕_地板清潔服務_智慧清潔機器人_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/robot-vacuums" data-ga-category="按鈕_地板清潔服務_智慧清潔機器人_了解更多" data-ga-event="按鈕_地板清潔服務_智慧清潔機器人_了解更多" class="btngo1" target="_blank">
 
                                 </a>
                             </div>
@@ -534,7 +481,7 @@
                     </div>
                     <div class="colorline-red colorline3"></div>
                 </div>
-                <div class="col-md-5 col-sm-12 imgright order-md-2 order-1 innerborder">
+                <div class="col-md-4 col-sm-12 imgright order-md-2 order-1 innerborder">
                     <img class="service_img navhidesm" src="image/p04/p04-png-02.png" alt="">
                     <img class="service_img hidemd" src="image/phone/p04/floor-png-02.png" alt="">
                 </div>
@@ -586,8 +533,7 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/styler" data-ga-category="按鈕_衣物護理服務_品味生活 衣物護理_了解更多" data-ga-event="按鈕_衣物護理服務_品味生活 衣物護理_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/styler" data-ga-category="按鈕_衣物護理服務_品味生活 衣物護理_了解更多" data-ga-event="按鈕_衣物護理服務_品味生活 衣物護理_了解更多" class="btngo1" target="_blank">
 
                                 </a>
                             </div>
@@ -596,7 +542,7 @@
                 </div>
             </div>
             <div class="row r2 animation a3">
-                <div class="col-md-6 offset-md-1 f30 fm24 text-md-left text-center order-md-1 order-2">
+                <div class="col-md-7 f30 fm24 text-md-left text-center order-md-1 order-2">
                     <div class="content2 fred row ">
                         <div class="order-md-1 order-2">
                             <span>上下雙能洗淨</span>
@@ -612,8 +558,8 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/washing-machines/lg-WD-S12GV-TWINWASH" data-ga-category="按鈕_衣物護理服務_上下雙能洗淨_了解更多" data-ga-event="按鈕_衣物護理服務_上下雙能洗淨_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/washing-machines/lg-WD-S12GV-TWINWASH" data-ga-category="按鈕_衣物護理服務_上下雙能洗淨_了解更多" data-ga-event="按鈕_衣物護理服務_上下雙能洗淨_了解更多" class="btngo1"
+                                    target="_blank">
 
 
                                 </a>
@@ -626,14 +572,13 @@
                     <img class="service_img navhidesm" src="image/p05/p05-png-02.png" alt="">
                     <img class="service_img hidemd" src="image/phone/p05/wash-png-02.png" alt="">
                 </div>
-
+                <div class="row" class="block_line ">
+                    <img src="image/p05/p05-line02.png" alt="line" class="line line2">
+                </div>
             </div>
         </section>
 
         <section id="p6">
-                <div class="row line5" class="block_line ">
-                        <img src="image/p05/p05-line02.png" alt="line" class="line line2">
-                    </div>
             <div class="row overview animation a1 bg" style="">
                 <div class="col-md-12 text-center fwhite" style="">
                     <div class="icon">
@@ -671,8 +616,7 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/laptop" data-ga-category="按鈕_安心推播服務_多屏監控_筆電_了解更多" data-ga-event="按鈕_安心推播服務_多屏監控_筆電_了解更多" class="btngo1"
-                                    target="_blank">
+                                <a href="http://www.lg.com/tw/laptop" data-ga-category="按鈕_安心推播服務_多屏監控_筆電_了解更多" data-ga-event="按鈕_安心推播服務_多屏監控_筆電_了解更多" class="btngo1" target="_blank">
 
                                 </a>
                             </div>
@@ -700,8 +644,7 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/tvs/lg-OLED65E7T" data-ga-category="按鈕_安心推播服務_多屏監控_OLED電視_了解更多" data-ga-event="按鈕_安心推播服務_多屏監控_OLED電視_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/tvs/lg-OLED65E7T" data-ga-category="按鈕_安心推播服務_多屏監控_OLED電視_了解更多" data-ga-event="按鈕_安心推播服務_多屏監控_OLED電視_了解更多" class="btngo1" target="_blank">
 
                                 </a>
 
@@ -715,12 +658,12 @@
                 </div>
             </div>
             <div class="row animation a4">
-                <div class="col-md-5 offset-md-1 col-sm-12 imgleft innerborder">
+                <div class="col-md-5 col-sm-12 imgleft innerborder">
                     <img class="service_img navhidesm" src="image/p06/p06-png-03.png" alt="">
                     <img class="service_img hidemd" src="image/phone/p06/save-png-03.png" alt="">
                     <div class="colorline-red colorline7"></div>
                 </div>
-                <div class="col-md-6  f30 fm24 text-md-left text-center contentright">
+                <div class="col-md-7 f30 fm24 text-md-left text-center contentright">
                     <div class="content2 fred row">
                         <div class="order-md-1 order-2">
                             <span>手機貼心推播</span>
@@ -736,8 +679,8 @@
                     <div class="row title f18 fm16" style="">
                         <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
                             <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw/smart-phones/lg-V30-Plus-rr" data-ga-category="按鈕_安心推播服務_手機貼心推播_了解更多" data-ga-event="按鈕_安心推播服務_手機貼心推播_了解更多"
-                                    class="btngo1" target="_blank">
+                                <a href="http://www.lg.com/tw/smart-phones/lg-V30-Plus-rr" data-ga-category="按鈕_安心推播服務_手機貼心推播_了解更多" data-ga-event="按鈕_安心推播服務_手機貼心推播_了解更多" class="btngo1"
+                                    target="_blank">
 
                                 </a>
                             </div>
@@ -747,30 +690,23 @@
             </div>
         </section>
         <section id="p7">
-                <img src="image/p06/p06-dot.png" alt="" class="dotimg">
             <div class="row overview animation a1 bg" style="">
                 <div class="col-md-12 text-center fwhite" style="background-image: none;">
                     <div class="icon">
                         <img src="image/p07/p07-icon.png" alt="icon">
                     </div>
-                    <div class="f40 fm16 title fmedium mcus3 mcus4">
-                        馬上填寫資料
-                    </div>
-
                     <div class="f36 fm12 title fmedium mcus3 mcus4">
 
-                        <span style="display:block;">即可享受我們全新服務</span>
+                        <span style="display:block;">我們重視居家管理的程度超乎您想像！</span>
 
 
-                        <span class="underline" style="">你就有機會獲得最具智慧的LG產品
-                        </span>
+                        <span class="underline" style="">一切為了帶給您更好的生活</span>
 
                     </div>
                     <div class="f24 fm11 desc fdemilight mcus5">
                         <div style="margin-top: 50px;">
-                            <div class="fdemilight">我們重視居家管理的程度超乎您想像！</div>
-                            <div class="fdemilight">就用V30+或  LG CordZero™ A9無線吸塵器，為生活添增精彩吧 
-                            </div>
+                            <div class="fdemilight">現在開始立即填寫資料即可享受我們全新的服務</div>
+                            <div class="fdemilight">你就有機會獲得最具智慧的LG產品</div>
                         </div>
                     </div>
                     <div>
@@ -820,24 +756,21 @@
                                 <p class="f18 fm11 fgray desc1">
                                     <input type="checkbox" name="read" class="read" style="margin-right: 20px;width:20px;cursor: pointer;">
                                     <span style="">我已讀過
-                                        <span class="fred ga" data-ga-category="按鈕_中獎服務_活動辦法" data-ga-event="按鈕_中獎服務_活動辦法" data-toggle="modal" data-target="#myModal3"
-                                            style="cursor:pointer;text-decoration: underline;">活動辦法</span>，並同意
-                                        <span class="fred ga" data-ga-category="按鈕_中獎服務_隱私權條約" data-ga-event="按鈕_中獎服務_隱私權條約" data-toggle="modal" data-target="#myModal4"
-                                            style="cursor:pointer;text-decoration: underline;">隱私權條約</span> 同意主辦單位運用此聯絡資訊進行贈獎事宜聯繫</span>
+                                        <span class="fred ga" data-ga-category="按鈕_中獎服務_活動辦法" data-ga-event="按鈕_中獎服務_活動辦法" data-toggle="modal" data-target="#myModal3" style="cursor:pointer;text-decoration: underline;">活動辦法</span>，並同意
+                                        <span class="fred ga" data-ga-category="按鈕_中獎服務_隱私權條約" data-ga-event="按鈕_中獎服務_隱私權條約" data-toggle="modal" data-target="#myModal4" style="cursor:pointer;text-decoration: underline;">隱私權條約</span> 同意主辦單位運用此聯絡資訊進行贈獎事宜聯繫</span>
                                 </p>
                             </div>
-                            <div class="row">
-                                <div id="my-widget" class="mx-auto d-block" style="text-align: center;position: relative;margin-bottom: 50px;"></div>
-                            </div>
+                            <div class="row"> <div id="my-widget" class="mx-auto d-block"style="text-align: center;position: relative;margin-bottom: 50px;"></div></div>
                             <div>
-                                <p id="submit" data-ga-category="按鈕_中獎服務_填寫資料_確定" data-ga-event="按鈕_中獎服務_填寫資料_確定" data-toggle="modal" data-target="#myModal1"
-                                    class="ga f18 fm24 fwhite desc mx-auto d-block text-center" style="background-color: #b7004a;padding: 3px;cursor: pointer;">
-                                    <span style="">確  定</span>
+                                <p id="submit" data-ga-category="按鈕_中獎服務_填寫資料_確定" data-ga-event="按鈕_中獎服務_填寫資料_確定" data-toggle="modal" data-target="#myModal1" class="ga f18 fm24 fwhite desc mx-auto d-block text-center" style="background-color: #b7004a;padding: 3px;cursor: pointer;">
+                                    <span style="">確定</span>
                                 </p>
                             </div>
+                           
 
-
-
+                        <div class="topbtn golink" data-go="#p0">
+                            <img src="/image/index/top-button.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -893,40 +826,6 @@
                 </div>
             </div>
         </section>
-        <section id="p92">
-            <div class="row">
-                <div class="col-md-12 text-center fred">
-                    <div class="arrow a1 animation">
-                        <img src="image/p02/p02-arrow.png" alt="icon">
-                    </div>
-                    <div class="a1 animation">
-                        <p class="f42 fm22 title fmedium">
-                            <span style="border-bottom: 1px solid #b7004a;">聯絡我們</span>
-                        </p>
-                    </div>
-                    <div class="a2 animation">
-                        <img class="navhidesm" src="image/p09/P09-map.jpg" alt="">
-                        <img class="hidemd" src="image/phone/p09/P09-map.jpg" alt="">
-                    </div>
-                    <div class="a3 animation f18 fgray fm16" style="letter-spacing: 3px;">
-                        <span>無人AI家政公司地址:雲端<img class="wifi" style="margin-left:5px;" src="/image/index/wifi-icon.png"></span>
-                    </div>
-                    <div class="a3 animation row title f18 fm16" style="">
-                        <div class="c-btn c-posi-center c-type-border mx-auto d-block ">
-                            <div class="c-btn__inner">
-                                <a href="http://www.lg.com/tw" data-ga-category="按鈕_聯絡我們_雲端地址" data-ga-event="按鈕_聯絡我們_雲端地址" class="btngo1 lgaddress" target="_blank">
-
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="topbtn golink" data-go="#p0">
-                        <img class="navhidesm" src="/image/index/top-button.png">
-                        <img class="hidemd" src="/image/phone/index/top-button.png">
-                    </div>
-                </div>
-            </div>
-        </section>
         <section id="pf">
             <div class="row animation active" style="background-color: #3c3c3c;background-image: none;">
                 <div class="col-md-12 text-center fwhite" style="">
@@ -942,11 +841,10 @@
 
     <!-- The Modal -->
     <div class="modal fade modal2" id="myModal1" style="background-color: rgba(44, 44, 44, 0.9);">
-        <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 95vh;">
+        <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 90vh;">
             <div class="modal-content" style="background-color: transparent;border: 0;">
                 <div class="modal-header" style="border-bottom: 0;">
-                    <img data-ga-category="按鈕_你確定要放棄抽獎機會_關閉" data-ga-event="按鈕_你確定要放棄抽獎機會_關閉" class="close ga" data-dismiss="modal" src="/image/off-icon.png"
-                    />
+                    <img data-ga-category="按鈕_你確定要放棄抽獎機會_關閉" data-ga-event="按鈕_你確定要放棄抽獎機會_關閉" class="close ga" data-dismiss="modal" src="/image/off-icon.png" />
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body" style="color: #fff;text-align: center;">
@@ -1026,8 +924,7 @@
         <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 90vh;">
             <div class="modal-content" style="background-color: transparent;border: 0;">
                 <div class="modal-header" style="border-bottom: 0;">
-                    <img data-ga-category="按鈕_你確定要放棄抽獎機會_關閉" data-ga-event="按鈕_你確定要放棄抽獎機會_關閉" class="close ga" data-dismiss="modal" src="/image/off-icon.png"
-                    />
+                    <img data-ga-category="按鈕_你確定要放棄抽獎機會_關閉" data-ga-event="按鈕_你確定要放棄抽獎機會_關閉" class="close ga" data-dismiss="modal" src="/image/off-icon.png" />
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body" style="color: #fff;text-align: center;">
@@ -1066,8 +963,7 @@
         <div class="modal-dialog" style="border: 1px solid #ffffff80;padding: 20px;height: 98vh;">
             <div class="modal-content" style="background-color: transparent;border: 0;">
                 <div class="modal-header" style="border-bottom: 0;">
-                    <img data-ga-category="按鈕_MENU_關閉" data-ga-event="按鈕_MENU_關閉" class="close ga" data-dismiss="modal" src="/image/off-icon.png"
-                    />
+                    <img data-ga-category="按鈕_MENU_關閉" data-ga-event="按鈕_MENU_關閉" class="close ga" data-dismiss="modal" src="/image/off-icon.png" />
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body fdemilight mmenu" style="color: #fff;text-align: center;position: relative;left: 11px;">
@@ -1126,53 +1022,50 @@
     <script src="address.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112518342-5"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112518342-4"></script>
 
 
 
 
     <script>
-        var verifyCallback = function (response) {
-            // 如果 JavaScript 驗證成功
-            if (response) {
-                $.post('captcha.php', { 'g-recaptcha-response': response }, function (data, status) {
-                    // 如果 PHP 驗證成功
-                    if (status == 'success') $("#google").val(data);
-                });
-            }
-        };
+    var verifyCallback = function(response) {
+        // 如果 JavaScript 驗證成功
+        if (response) {
+            $.post('captcha.php', { 'g-recaptcha-response': response }, function(data, status) {
+                // 如果 PHP 驗證成功
+                if (status == 'success')$("#google").val(data);
+            });
+        }
+    };
 
-        var onloadCallback = function () {
-            grecaptcha.render(
-                'my-widget', {                              // widget 驗證碼視窗在 id="my-widget" 顯示
-                    'sitekey': '6LcWk0wUAAAAADSbEA_9o0ize7PeRJP9aH3LdBB6',  // API Key
-                    'callback': verifyCallback            // 主題
-                }
-            );
-        };
+    var onloadCallback = function() {
+        grecaptcha.render(
+            'my-widget', {                              // widget 驗證碼視窗在 id="my-widget" 顯示
+                'sitekey' : '6LcWk0wUAAAAADSbEA_9o0ize7PeRJP9aH3LdBB6',  // API Key
+                'callback' : verifyCallback            // 主題
+            }
+        );
+    };
         $(function () {
-            $(".name").val("");
+           $(".name").val("");
             $(".email").val("");
-            $(".phonenumb").val("");
-            $(".addr3").val("");
+              $(".phonenumb").val("");
+                $(".addr3").val("");
             $("#google").val("");
-            $(".deskmenu a,.servicemenu li").mouseenter(function () {
+            $(".deskmenu a").mouseenter(function () {
                 $(".menu_underline", this).addClass("active");
             });
 
-            $(".deskmenu a,.servicemenu li").mouseleave(function () {
+            $(".deskmenu a").mouseleave(function () {
                 $(".menu_underline", this).removeClass("active");
             });
-            
 
 
 
             var $target = $('html,body');
             var cur_url = window.location.href;
-            var haslogin = false;
             if (cur_url.indexOf("login") >= 0) {
                 $target.animate({ scrollTop: $("#p8").position().top }, 1000);
-                haslogin = true;
             } else {
                 fbapi.preCall(function () {
                     var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
@@ -1258,7 +1151,7 @@
 
             var userid = "";
             $("#submit").click(function () {
-                if ($("#google").val() == "") {
+                if($("#google").val()==""){
                     alert("請勾選我不是機器人");
                     return false;
                 }
@@ -1308,7 +1201,7 @@
                     addr1: $(".addr1 option:selected").text(),
                     addr2: $(".addr2 option:selected").text(),
                     addr3: $(".addr3").val(),
-                    google: $("#google").val(),
+                    google:$("#google").val(),
                     type: 'new'
                 }).done(function (data) {
                     userid = data;
@@ -1361,16 +1254,6 @@
             //$(".mask").css("height", ($("#p8").position().top + 400));
             var already_tag = [];
             function addpageview(pagename, pageurl) {
-                if (!already_tag.includes(pagename) && !haslogin) {
-                    already_tag.push(pagename);
-                    gtag('config', 'UA-112518342-5', {
-                        'page_title': pagename,
-                        'page_path': pageurl
-                    });
-                }
-            }
-
-            function addpageview_2(pagename, pageurl) {
                 if (!already_tag.includes(pagename)) {
                     already_tag.push(pagename);
                     gtag('config', 'UA-112518342-5', {
@@ -1381,20 +1264,16 @@
             }
 
             $('#myModal3').on('shown.bs.modal', function (e) {
-                addpageview_2("活動辦法", "活動辦法");
+                addpageview("活動辦法", "活動辦法");
             });
 
             $('#myModal4').on('shown.bs.modal', function (e) {
-                addpageview_2("隱私權條約", "隱私權條約");
+                addpageview("隱私權條約", "隱私權條約");
             });
 
             var distop = 1100;
             $(window).scroll(function () {
-                
-                if ($(this).scrollTop() > ($("#p1").position().top + distop)) {
-                    addpageview("公司理念", "公司理念");
-                }
-
+                addpageview("公司理念", "公司理念");
                 if ($(this).scrollTop() > ($("#p2 .a1").position().top + distop)) {
                     addpageview("服務項目", "服務項目");
                     $("#p2 .a1").addClass("active");
@@ -1408,24 +1287,7 @@
                     $("#p2 .a3").addClass("active");
                 }
 
-
                 distop = 200;
-
-
-                if ($(this).scrollTop() > ($("#p21 .a1").position().top + distop)) {
-                    addpageview("公司組織", "公司組織");
-                    $("#p21 .a1").addClass("active");
-                }
-
-                if ($(this).scrollTop() > ($("#p21 .a2").position().top + distop)) {
-                    $("#p21 .a2").addClass("active");
-                }
-
-                if ($(this).scrollTop() > ($("#p22 .a1").position().top + distop)) {
-                    $("#p22 .a1").addClass("active");
-                }
-
-                distop = 500;
 
                 if ($(this).scrollTop() > ($("#p3 .a1").position().top - distop)) {
                     $("#p3 .a1").addClass("active");
@@ -1510,19 +1372,6 @@
                     $("#p9 .a2").addClass("active");
                 }
 
-                if ($(this).scrollTop() > ($("#p92 .a1").position().top - distop)) {
-                    addpageview("聯絡我們_雲端地址", "聯絡我們_雲端地址");
-                    $("#p92 .a1").addClass("active");
-                }
-
-                if ($(this).scrollTop() > ($("#p92 .a2").position().top - distop)) {
-                    $("#p92 .a2").addClass("active");
-                }
-
-                if ($(this).scrollTop() > ($("#p92 .a3").position().top - distop)) {
-                    $("#p92 .a3").addClass("active");
-                }
-
 
 
 
@@ -1541,7 +1390,7 @@
 
             $('head').append('<link rel="stylesheet" href="font.css" type="text/css" />');
         });
-
+    
     </script>
 
 

@@ -66,12 +66,6 @@
                                     <div class="menu_underline"></div>
                                 </a>
                             </li>
-                            <li>
-                                    <a data-ga-category="按鈕_MEＮU_公司組織" data-ga-event="按鈕_MEＮU_公司組織" href="#" class="golink" data-go="#p21">
-                                        <img src="image/index/index-meau.png" alt="">
-                                        <div class="menu_underline"></div>
-                                    </a>
-                                </li>
                             <li class="service">
                                 <a href="#" data-ga-category="按鈕_MEＮU_服務項目" data-ga-event="按鈕_MEＮU_服務項目">
                                     <img src="image/index/index-nav-2.png" alt="">
@@ -769,7 +763,7 @@
                     <div class="f24 fm11 desc fdemilight mcus5">
                         <div style="margin-top: 50px;">
                             <div class="fdemilight">我們重視居家管理的程度超乎您想像！</div>
-                            <div class="fdemilight">就用V30+或  LG CordZero™ A9無線吸塵器，為生活添增精彩吧 
+                            <div class="fdemilight">就用V30+或  LG CordZero™ A9無限吸塵器，位生活添增精彩吧 
                             </div>
                         </div>
                     </div>
@@ -1126,7 +1120,7 @@
     <script src="address.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112518342-5"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112518342-4"></script>
 
 
 
@@ -1169,10 +1163,8 @@
 
             var $target = $('html,body');
             var cur_url = window.location.href;
-            var haslogin = false;
             if (cur_url.indexOf("login") >= 0) {
                 $target.animate({ scrollTop: $("#p8").position().top }, 1000);
-                haslogin = true;
             } else {
                 fbapi.preCall(function () {
                     var isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
@@ -1361,16 +1353,6 @@
             //$(".mask").css("height", ($("#p8").position().top + 400));
             var already_tag = [];
             function addpageview(pagename, pageurl) {
-                if (!already_tag.includes(pagename) && !haslogin) {
-                    already_tag.push(pagename);
-                    gtag('config', 'UA-112518342-5', {
-                        'page_title': pagename,
-                        'page_path': pageurl
-                    });
-                }
-            }
-
-            function addpageview_2(pagename, pageurl) {
                 if (!already_tag.includes(pagename)) {
                     already_tag.push(pagename);
                     gtag('config', 'UA-112518342-5', {
@@ -1381,20 +1363,16 @@
             }
 
             $('#myModal3').on('shown.bs.modal', function (e) {
-                addpageview_2("活動辦法", "活動辦法");
+                addpageview("活動辦法", "活動辦法");
             });
 
             $('#myModal4').on('shown.bs.modal', function (e) {
-                addpageview_2("隱私權條約", "隱私權條約");
+                addpageview("隱私權條約", "隱私權條約");
             });
 
             var distop = 1100;
             $(window).scroll(function () {
-                
-                if ($(this).scrollTop() > ($("#p1").position().top + distop)) {
-                    addpageview("公司理念", "公司理念");
-                }
-
+                addpageview("公司理念", "公司理念");
                 if ($(this).scrollTop() > ($("#p2 .a1").position().top + distop)) {
                     addpageview("服務項目", "服務項目");
                     $("#p2 .a1").addClass("active");

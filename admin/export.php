@@ -34,13 +34,19 @@ if (!$conn) {
 mysql_select_db($dbname,$conn);
 
 $date = $_GET['date'];
+$distinct = $_GET['distinct'];
 
 if($date!=""){
-    $wstr = "WHERE `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
-    $wstr2 = "and `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
+    $wstr = "and `create_date` BETWEEN '".$date." 00:00:00' AND '".$date." 23:59:59' ";
 }
 
-$query = "select * from lg_reg $wstr union select * from lg_reg0314 $wstr order by create_date ";
+$hacker = " and `name` not in ('彭如鈺' ,'林秀玉', '彭淑玲', '陳獻文') ";
+
+if($distinct!=""){
+    $distinct = " group by name";
+}
+
+$query = "select * from (select * from lg_reg union select * from lg_reg0314 order by create_date desc) as n where 1=1 $wstr $hacker $distinct order by create_date desc";
 $result = mysql_query($query);
 
 
